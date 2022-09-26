@@ -1,0 +1,1 @@
+set opacity of the main tag to 0
