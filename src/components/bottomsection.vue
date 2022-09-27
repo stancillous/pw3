@@ -15,9 +15,9 @@
                     </div>
 
                     <div class="contact-section-links">
-                        <a  class="contact-section-icons" id="contactSectionLinkedin"  target="_blank" href="https://www.linkedin.com/in/stancillous-raymond-2b896a23a/">linkedin</a>
+                        <a  class="contact-section-icons" id="contactSectionLinkedin"  target="_blank" href="https://www.linkedin.com/in/stancillous/">linkedin</a>
                         <a  class="contact-section-icons" id="contactSectionGithub"  target="_blank" href="https://github.com/stancillous">github</a>
-                        <a  class="contact-section-icons"  id="contactSectionBehance" target="_blank" href="https://www.behance.net/stancilraymond">behance</a>
+                        <a  class="contact-section-icons"  id="contactSectionInstagram" target="_blank" href="https://www.instagram.com/stancillous">instagram</a>
                         <a  class="contact-section-icons" id="contactSectionTelegram"  target="_blank" href="https://t.me/Stancillous">telegram</a>
 
                     </div>

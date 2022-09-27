@@ -9,6 +9,14 @@ import MouseFollower from "mouse-follower";
 import LocomotiveScroll from 'locomotive-scroll';
 
 
+//SELECTING THE FORM ELEMENT AND CLEARING INFO AFTER USER SENDS INFO VIA THE FORM
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+}
+
+
 //FUNCTION FOR THE MOUSE FOLLOWER
 function cursorAnimation(){
     MouseFollower.registerGSAP(gsap);
@@ -109,7 +117,7 @@ function cursorAnimation(){
 
     //SELECTING THE a TAGS IN THE CONTACT SECTION
     const ContactSectionLinkedin  = document.querySelector('#contactSectionLinkedin');
-    const ContactSectionBehance = document.querySelector('#contactSectionBehance');
+    const ContactSectionInstagram = document.querySelector('#contactSectionInstagram');
     const contactSectionGithub = document.querySelector('#contactSectionGithub');
     const ContactSectionTelegram = document.querySelector('#contactSectionTelegram');
 
@@ -126,11 +134,11 @@ function cursorAnimation(){
     });
 
     //adding image when hovering over the behance link
-    ContactSectionBehance .addEventListener('mouseenter', () => {
+    ContactSectionInstagram .addEventListener('mouseenter', () => {
         cursor.setImg('./assets/behanceimage.png')
     });
 
-    ContactSectionBehance .addEventListener('mouseleave', () => {
+    ContactSectionInstagram .addEventListener('mouseleave', () => {
         cursor.removeImg()
     });
 

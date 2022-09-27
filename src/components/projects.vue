@@ -101,24 +101,23 @@
 
      
 
-                    <!-- TRANS CARGO PROJECT -->
+                    <!-- TYPING APP PROJECT -->
                     <div class="project-info">
                         <!-- div with the icons of the projects -->
                         
                         <div class="project-section-icons-container">
-                            <a  target="_blank" class="code" href="https://github.com/stancillous/C-Profile"><i class="fa-solid fa-code"></i></a>
+                            <a  target="_blank" class="code" href="https://github.com/stancillous/typing-app"><i class="fa-solid fa-code"></i></a>
 
                             <div class="github-and-external-link">
-                                <a target="_blank"  href="https://stancillous.github.io/tc/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank"  href="https://ray-typing-app.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
 
 
-                        <h1>Personal Website v2</h1>
-                        <p> Second iteration of my personal website</p>
+                        <h1>Typing game</h1>
+                        <p> A web app to test your typing skills. Built with vue.js</p>
                      
                         <div class="tech-used-container">
-                            <span class="tech-used">SASS</span>
                             <span class="tech-used">Vue.js</span>
                         </div>
     
@@ -138,7 +137,7 @@
                         </div>   
 
                      <h1>weather web app</h1>
-                     <p>A simple weather web app. The first ever app I developed while learning to work with APIs.</p>
+                     <p>A simple weather web app. First app I developed while learning to work with APIs.</p>
                      <div class="tech-used-container">
                          <span class="tech-used">Vue.js</span>
                          <span class="tech-used">API</span>

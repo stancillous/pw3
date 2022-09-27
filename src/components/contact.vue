@@ -8,30 +8,31 @@
 
 
                 <div class="send-message-container-details">
-                    <form action="" id="form">
+                    <form action="https://formspree.io/f/xknerajz" method="POST" id="form">
 
                         <div class="name-email-container">
-                            <!-- <label for="name" >Your name</label>  -->
 
-                            <input required autocomplete="off" class="sendMessageSectionInputs" placeholder="your name" type="text" id="name"> <br>
+                            <input name="name" required autocomplete="off" class="sendMessageSectionInputs" placeholder="your name" type="text" id="name"> <br>
         
-                            <!-- <label for="email">Your email address</label> <br> -->
-                            <input required autocomplete="off" class="sendMessageSectionInputs" placeholder="your email address" type="email" id="email"> <br>
+                            <input name="email" required autocomplete="off" class="sendMessageSectionInputs" placeholder="your email address" type="email" id="email"> <br>
                    
                         </div>
 
                         <label for="message"></label><br>
-                        <textarea required class="sendMessageSectionInputs" placeholder="message" name="" id="message" cols="40" rows="2"></textarea> <br>
+                        <textarea name="message" required class="sendMessageSectionInputs" placeholder="message"  id="message" cols="40" rows="2"></textarea> <br>
                         
                         <div class="button-container">
                             
-                            <button data-scroll data-scroll-speed="1.2" id="submitButton"><div id="animatingSubmitButton"></div>launch</button>
+                            <button type="submit" data-scroll data-scroll-speed="1.2" id="submitButton"><div id="animatingSubmitButton"></div>launch</button>
 
                         </div>
 
 
 
                     </form>
+
+
+
                 </div>
             </div>
         </section>
