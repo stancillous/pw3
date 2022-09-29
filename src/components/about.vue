@@ -31,8 +31,7 @@
 
 
 
-                                <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://drive.google.com/file/d/1GBhuavIoyVJd5plk5GIbrGnACmL34vle/view?usp=sharing">my resume</a></button>
-                                <!-- <a id="downloadResume" class="download-resume" href=""><div id="animatingResumeButton"></div>my résumé</a> -->
+                                <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://stanceray.com/resume.pdf">my resume</a></button>
                          
                             </div>
     
