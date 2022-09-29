@@ -1,13 +1,14 @@
 <template>
 
 <main data-scroll-container class="main">
-  
+
+
   <header data-scroll-section class="page-header">
               <div class="page-header-container" data-cursor="-hidden">
                   <nav class="nav-bar">
                       <div class="logo">
                           <div class="logo-image-container">
-                              <a class="logo-anchor" href="index.html"><img id="logo-image" src="./assets/cplogo.png" alt=""></a>
+                              <a class="logo-anchor" href="https://stanceray.com/"><img id="logo-image" src="./assets/cplogo.png" alt=""></a>
                           </div>
                       </div>
       
@@ -16,8 +17,9 @@
                               <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#about-section-id">about</a></li>
                               <li class="menu-links-items"><a data-scroll-to  class="menu-links-items-a" href="#projects-section-id">projects</a></li>
                               <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#contact-section-id">contact</a></li>
-                              <li class="menu-links-items"><a target="_blank" href="https://drive.google.com/file/d/1GBhuavIoyVJd5plk5GIbrGnACmL34vle/view?usp=sharing" id="page-header-resume">resume</a></li>
-                          </ul>
+                              <!-- <li class="menu-links-items"><a target="_blank" href="https://www.dropbox.com/s/0ricmr9cpgr9tks/stance.pdf?dl=0" id="page-header-resume">resume</a></li> -->
+                              <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/resume.pdf" id="page-header-resume">resume</a></li>
+                            </ul>
       
       
                       </div>
@@ -63,6 +65,9 @@
   <projectsComp/>
   <contactComp/>
   <bottomSectionComp/>
+
+  
+
 </main>
 
 
@@ -90,8 +95,12 @@ export default {
 
 <style lang="scss">
 
+
 @import url('../cursor/utils.css');
 @import url('../cursor/cursor.css');
+
+
+
 
 $web-color:#000000;
 $web-color2:#00ff998f;
@@ -800,7 +809,7 @@ justify-content: center;
                     border: none;
                     background-color: transparent;
                     font-weight: $bold;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     color: black;
                     font-family: $web-font1,$web-font2;
                     padding: .8rem ;
