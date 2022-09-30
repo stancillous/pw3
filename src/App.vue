@@ -1152,7 +1152,6 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
     .hamburger-button{
         display: block;
         position: absolute;
-        z-index: 3433;
     }
 
     //PAGE HEADER
