@@ -181,6 +181,7 @@ function initLocomotiveScroll(){
     });
     scroll.scrollTo();
 }
+
 initLocomotiveScroll()
 
 const hamburgerButton = document.querySelector('.hamburger-button') //button
@@ -193,15 +194,15 @@ const submitBtn = document.querySelector('#submitButton') //the button on the se
 const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
 
 //HIDING THE LINKS WHEN USER CLICKS OUTSIDE THE LINKS DIV
-window.addEventListener('mouseup',function(event){
-    let linksDiv = document.querySelector('.page-header-links');
-    if(event.target != linksDiv && event.target.parentNode != linksDiv){
+// window.addEventListener('mouseup',function(event){
+//     let linksDiv = document.querySelector('.page-header-links');
+//     if(event.target != linksDiv && event.target.parentNode != linksDiv){
  
 
-        linksDiv.classList.remove('show-links')
-        hamburgerButton.classList.remove('hamburgerClicked')
-    }
-}); 
+//         linksDiv.classList.remove('show-links')
+//         hamburgerButton.classList.remove('hamburgerClicked')
+//     }
+// }); 
 
 //FUNCTION TO HIDE THE MENU LINKS WHEN A LINK IS CLICKED
 function linksClicked(){
@@ -218,7 +219,7 @@ function linksClicked(){
 
 linksClicked()
 
-//FUNCTION TO SHOW THE MENU LINKS
+//FUNCTION TO SHOW THE MENU LINKS WHEN H.BUTTON IS CLICKED
 function showLInks(){
 
     //TIMLINE TO ANIMATE THE HEADER LINKS WHEN THE BUTTON IS CLICKED
@@ -229,15 +230,20 @@ function showLInks(){
     hamburgerButton.addEventListener('click',()=>{
 
         hamburgerButton.classList.toggle('hamburgerclicked')
+      
         navlinks.classList.toggle('show-links')
+        
         
         //animating the links only if the nav menu is showing
         if(navlinks.classList.contains('show-links')){
             aTagsTl.play()
+            document.body.classList.add('hideOverflow')
         }
 
         else{
             aTagsTl.reverse()
+            document.body.classList.remove('hideOverflow')
+
         }
 
     })

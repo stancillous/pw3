@@ -19,7 +19,13 @@
                               <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#contact-section-id">contact</a></li>
                               <!-- <li class="menu-links-items"><a target="_blank" href="https://www.dropbox.com/s/0ricmr9cpgr9tks/stance.pdf?dl=0" id="page-header-resume">resume</a></li> -->
                               <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/resume.pdf" id="page-header-resume">resume</a></li>
+                              
+                              <div class="nav-mail-div">
+                                    <p>Get in touch</p>
+                                    <a id="nav-mail" href="mailto:stancillousray@gmail.com">stancillousray@gmail.com</a>
+                                </div>
                             </ul>
+                            
       
       
                       </div>
@@ -357,6 +363,39 @@ body{
 
                 }
 
+                //DIV TO BE SHOWN ON SMALL SCREENS WITH THE GET IN TOUCH MESSAGE AND EMAIL
+                .nav-mail-div{
+                    margin-top: 2rem;
+                    display:none;
+
+                    p{
+                        font-size: 1.4rem;
+                        color: white;
+                        opacity: .7;
+                        padding-bottom: .5rem;
+                        font-weight: $medium;
+                    }
+
+                    a{
+                        color: white;
+                        opacity: .9;
+                        font-size: 1.4rem;
+                        text-decoration: none;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            display: block;
+                            height: .1rem;
+                            position: absolute;
+                            left: 0;
+                            background-color: rgb(255, 255, 255);
+                            bottom: -5%;
+                            right: 0;
+
+                        }
+                    }
+                }
+
 
             }
         }
@@ -540,6 +579,15 @@ justify-content: center;
                                 color: white;
                                 padding: .4rem ;
                                 opacity: .7;
+
+                                &::before{
+                                    content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                                    color: rgb(185, 172, 172); /* Change the color */
+                                    font-weight: bold; /* If you want it to be bold */
+                                    display: inline-block; /* Needed to add space between the bullet and the text */
+                                    width: 1rem; /* Also needed for space (tweak if needed) */
+                                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                                }
                             }
                         }
 
@@ -915,7 +963,7 @@ justify-content: center;
                 position: relative;
                 color:white;
                 
-                ;
+                
                 &::after{
                     content: '';
                     display: block;
@@ -983,21 +1031,22 @@ justify-content: center;
 // CLASSES TO BE TOGGLED ARE HERE
 
 ///TOGGLE THIS CLASS TO THE HAMBURGER WHEN CLICKED
-//
+
 .hamburger-button.hamburgerclicked{
     // position:fixed;
     transform: rotate(180deg);
-    // span{
-    //     background-color: $body-color;
-    //     &:nth-child(1){
-    //         transform: translateY(.5rem) rotate(45deg);
 
-    //     }
+    span{
+        background-color:white;
+        &:nth-child(1){
+            transform: translateY(.5rem) rotate(45deg);
 
-    //     &:nth-child(2){
-    //         transform: translateY(-.3rem) rotate(-45deg);
-    //     }
-    // }
+        }
+
+        &:nth-child(2){
+            transform: translateY(-.3rem) rotate(-45deg);
+        }
+    }
 }
 
 //CLASS TO BE TOGGLED TO THE ACTIVE SECTION NAV
@@ -1010,12 +1059,14 @@ justify-content: center;
 
 body.hideOverflow{  //disabling scrolling when the h. button is clicked
     overflow: hidden;
+    height: 100vh;
 
 }
 
 //TOGGLE THIS CLASS TO SHOW THE MENU LINKS
 .page-header .page-header-container .nav-bar .page-header-links.show-links{
-    clip-path: inset(0 0 0 0);
+    // clip-path: inset(0 0 0 0);
+    opacity: 1;
 
 }
 
@@ -1101,6 +1152,7 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
     .hamburger-button{
         display: block;
         position: absolute;
+        z-index: 3433;
     }
 
     //PAGE HEADER
@@ -1122,15 +1174,17 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     // right: -100vw;
                     height: 100vh;
     
-                    width: 70vw;
+                    width: 100vw;
                     z-index: 222;
                     
 
-                    clip-path: inset(100% 0 0 0);
+                    // clip-path: inset(100% 0 0 0);
+                    // clip-path: inset(0 0 0 100%);
+                    opacity: 0;
                     background-color: rgb(0, 0, 0);
-
             
-                    transition: all .5s cubic-bezier(0,-0.02, 0.18, 0.65);
+                    // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
+                    transition: opacity .5s cubic-bezier(0.33, 1, 0.68, 1);
                 
                     ul{
                         width: 50%;
@@ -1145,13 +1199,21 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                         li {
                             a{
                                 font-size: 1.6rem;
-                                opacity: 1;
+                                
+                                opacity: .9;
+                                font-weight: $bold;
+                                text-transform: capitalize;
                                 color: rgb(255, 255, 255);
                             }
      
                             #page-header-resume{
+                                font-size: 1.6rem;
+                                opacity: .9;
+                                font-weight: $bold;
+                                text-transform: capitalize;
+                                color: rgb(255, 255, 255);
                                 color: white;
-                                border: 1px solid white;
+                                // border: 1px solid white;
                             }
                         } 
                     }
@@ -1160,7 +1222,11 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     #line{
                         display: none;
                     }
+                    .nav-mail-div{
+                        display: block;
+                    }
                 }
+
             }
         }
     }
