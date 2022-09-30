@@ -237,12 +237,12 @@ function showLInks(){
         //animating the links only if the nav menu is showing
         if(navlinks.classList.contains('show-links')){
             aTagsTl.play()
-            document.body.classList.add('hideOverflow')
+//             document.body.classList.add('hideOverflow')
         }
 
         else{
             aTagsTl.reverse()
-            document.body.classList.remove('hideOverflow')
+//             document.body.classList.remove('hideOverflow')
 
         }
 
