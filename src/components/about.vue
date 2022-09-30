@@ -21,7 +21,7 @@
                                 <ul>
                                     <li>Javascript</li>
                                     <li>Vue.js</li>
-                                    <li>Node.js</li>
+                                    <li>TypeScript</li>
                                     <li>REST APIs</li>
                                     <li>Git</li>
                                     <li>SASS</li>
