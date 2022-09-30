@@ -56,14 +56,15 @@
   
   
   <div class="navigate-div">
-              <div class="navigate-buttons">
-                  <div class="nav-buttons-div "><a data-scroll-to class="a" href="#top-page-section-id"></a></div>
-                  <div class="nav-buttons-div"><a data-scroll-to class="a" href="#about-section-id"></a></div>
-                  <div class="nav-buttons-div"><a data-scroll-to class="a" href="#projects-section-id"></a></div>
-                  <div class="nav-buttons-div"><a data-scroll-to class="a" href="#send-message-section-id"></a></div>
-                  <div class="nav-buttons-div"><a data-scroll-to class="a" href="#contact-section-id"></a></div>
-                  <div class="right-line"></div>
-              </div>
+
+    <div class="navigate-buttons">
+        <div class="nav-buttons-div "><a data-scroll-to class="a" href="#top-page-section-id"></a></div>
+        <div class="nav-buttons-div"><a data-scroll-to class="a" href="#about-section-id"></a></div>
+        <div class="nav-buttons-div"><a data-scroll-to class="a" href="#projects-section-id"></a></div>
+        <div class="nav-buttons-div"><a data-scroll-to class="a" href="#send-message-section-id"></a></div>
+        <div class="nav-buttons-div"><a data-scroll-to class="a" href="#contact-section-id"></a></div>
+        <div class="right-line"></div>
+    </div>
   </div>
   
   <topSectionComp/>
@@ -1065,8 +1066,8 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
 
 //TOGGLE THIS CLASS TO SHOW THE MENU LINKS
 .page-header .page-header-container .nav-bar .page-header-links.show-links{
-    // clip-path: inset(0 0 0 0);
-    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    // opacity: 1;
 
 }
 
@@ -1151,7 +1152,9 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
     //showing the button
     .hamburger-button{
         display: block;
-        position: absolute;
+        z-index: 1221;
+        // border: 2px solid;
+        // position: absolute;
     }
 
     //PAGE HEADER
@@ -1178,12 +1181,12 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     
 
                     // clip-path: inset(100% 0 0 0);
-                    // clip-path: inset(0 0 0 100%);
-                    opacity: 0;
+                    clip-path: inset(0 0 0 100%);
+                    // opacity: .9;
                     background-color: rgb(0, 0, 0);
             
                     // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
-                    transition: opacity .5s cubic-bezier(0.33, 1, 0.68, 1);
+                    transition: all .5s cubic-bezier(0.33, 1, 0.68, 1);
                 
                     ul{
                         width: 50%;
@@ -1248,10 +1251,16 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
         padding: 4rem;
     }
 
-    .about-me-section .about-me-section-header-and-info{
+    .about-me-section{
+        z-index: 99999;
+
+        .about-me-section-header-and-info{
         padding: unset;
         padding: 2rem;
-    }
+
+        }
+        
+    } 
 
     .contact-section .contact-section-container {
         .contact-me{
