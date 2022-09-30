@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "gsap": "^3.11.1",
+    "gsap": "^3.11.2",
     "locomotive-scroll": "^4.1.4",
     "mouse-follower": "^1.1.2",
     "vue": "^3.2.13"
