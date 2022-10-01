@@ -612,6 +612,16 @@ justify-content: center;
                                 text-decoration: none;
                                 color: white;
                                 font-weight: $medium;
+                                
+                                &:active{
+                                  color:white;
+                                }
+                                
+                                &:visited{
+                                  color:white;
+                                }
+                                
+                                
 
                             }
                             #animatingResumeButton{
@@ -1066,8 +1076,8 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
 
 //TOGGLE THIS CLASS TO SHOW THE MENU LINKS
 .page-header .page-header-container .nav-bar .page-header-links.show-links{
-    clip-path: inset(0 0 0 0);
-    // opacity: 1;
+    //clip-path: inset(0 0 0 0);
+     opacity: 1;
 
 }
 
@@ -1181,8 +1191,8 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     
 
                     // clip-path: inset(100% 0 0 0);
-                    clip-path: inset(0 0 0 100%);
-                    // opacity: .9;
+                    //clip-path: inset(0 0 0 100%);
+                    opacity: .9;
                     background-color: rgb(0, 0, 0);
             
                     // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
