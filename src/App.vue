@@ -1076,8 +1076,8 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
 
 //TOGGLE THIS CLASS TO SHOW THE MENU LINKS
 .page-header .page-header-container .nav-bar .page-header-links.show-links{
-    //clip-path: inset(0 0 0 0);
-     opacity: 1;
+    clip-path: inset(0 0 0 0);
+     //opacity: 1;
 
 }
 
@@ -1191,12 +1191,12 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     
 
                     // clip-path: inset(100% 0 0 0);
-                    //clip-path: inset(0 0 0 100%);
-                    opacity: 0;
+                    clip-path: inset(0 0 0 100%);
+                
                     background-color: rgb(0, 0, 0);
             
                     // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
-                    transition: all .5s cubic-bezier(0.33, 1, 0.68, 1);
+                    transition: all .4s cubic-bezier(0.33, 1, 0.68, 1);
                 
                     ul{
                         width: 50%;
