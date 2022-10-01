@@ -1192,7 +1192,7 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
 
                     // clip-path: inset(100% 0 0 0);
                     //clip-path: inset(0 0 0 100%);
-                    opacity: .9;
+                    opacity: 0;
                     background-color: rgb(0, 0, 0);
             
                     // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
