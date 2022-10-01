@@ -1187,7 +1187,7 @@ body.hideOverflow{  //disabling scrolling when the h. button is clicked
                     height: 100vh;
     
                     width: 100vw;
-                    z-index: 222;
+                    //z-index: 222;
                     
 
                     // clip-path: inset(100% 0 0 0);
