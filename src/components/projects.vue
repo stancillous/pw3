@@ -21,7 +21,7 @@
                         </div>   
 
                         <h1>Spotify Wrapper</h1>
-                        <p>Intergrated with Spotify's API, this web app shows personalized Spotify data. View recently played tracks, top songs, top artists and more. Get recommended artists based on your top artists.</p>
+                        <p>Integrated with Spotify's API, this web app shows personalized Spotify data. View recently played tracks, top songs, top artists and more. Get recommended artists based on your top artists.</p>
                         <div class="tech-used-container">
                             <span class="tech-used">Vue.js</span>
                             <span class="tech-used">Spotify's API</span>
