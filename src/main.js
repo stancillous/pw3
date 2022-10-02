@@ -16,6 +16,15 @@ window.onbeforeunload = () => {
     }
 }
 
+//CALLING THIS FUNCTIONS ONCE THE PAGE HAS LOADED
+window.addEventListener('load',()=>{
+    pageTimelines()
+    showLInks()
+    linksClicked()
+    initLocomotiveScroll()
+    cursorAnimation()
+})
+
 
 //FUNCTION FOR THE MOUSE FOLLOWER
 function cursorAnimation(){
@@ -168,7 +177,7 @@ function cursorAnimation(){
 
 }
 
-cursorAnimation()
+// cursorAnimation()
 
 
 // INITIALIZING THE LOCOMOTIVE SCROLL
@@ -182,7 +191,7 @@ function initLocomotiveScroll(){
     scroll.scrollTo();
 }
 
-initLocomotiveScroll()
+// initLocomotiveScroll()
 
 const hamburgerButton = document.querySelector('.hamburger-button') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
@@ -193,16 +202,6 @@ const projectsInfoDiv = document.querySelectorAll('.project-info') //all the div
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
 const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
 
-//HIDING THE LINKS WHEN USER CLICKS OUTSIDE THE LINKS DIV
-// window.addEventListener('mouseup',function(event){
-//     let linksDiv = document.querySelector('.page-header-links');
-//     if(event.target != linksDiv && event.target.parentNode != linksDiv){
- 
-
-//         linksDiv.classList.remove('show-links')
-//         hamburgerButton.classList.remove('hamburgerClicked')
-//     }
-// }); 
 
 //FUNCTION TO HIDE THE MENU LINKS WHEN A LINK IS CLICKED
 function linksClicked(){
@@ -217,7 +216,7 @@ function linksClicked(){
     })
 }
 
-linksClicked()
+// linksClicked()
 
 //FUNCTION TO SHOW THE MENU LINKS WHEN H.BUTTON IS CLICKED
 function showLInks(){
@@ -248,7 +247,7 @@ function showLInks(){
 
     })
 }
-showLInks()
+// showLInks()
 
 //TIMELINES FOR THE PAGE
 function pageTimelines(){
@@ -258,7 +257,7 @@ function pageTimelines(){
         ease:'Back.easeOut'
     }})
 
-    topPageSectionTl.to('.main',{opacity:1,ease:'none'})
+    topPageSectionTl.fromTo('.main',{opacity:0},{opacity:1,ease:'none'})
             .from('.menu-links-items',{y:-33,opacity:0,stagger:.05,duration:.6}) //the menu links
             .from('#logo-image',{opacity:0},'<') //the logoimage
             .from('.hamburger-button',{opacity:0},'<') //the hamburger button
@@ -308,7 +307,8 @@ function pageTimelines(){
                 
 }
 
-pageTimelines()
+// pageTimelines()
+
 
 //ANIMATING THE DIVS WITH THE PROJECT INFO WHEN HOVERED ON
 projectsInfoDiv.forEach((item)=>{
@@ -324,3 +324,4 @@ projectsInfoDiv.forEach((item)=>{
     projectsInfoDivTl.reverse()  
     })
 })
+

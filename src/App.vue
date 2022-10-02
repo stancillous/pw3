@@ -18,7 +18,7 @@
                               <li class="menu-links-items"><a data-scroll-to  class="menu-links-items-a" href="#projects-section-id">projects</a></li>
                               <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#contact-section-id">contact</a></li>
                               <!-- <li class="menu-links-items"><a target="_blank" href="https://www.dropbox.com/s/0ricmr9cpgr9tks/stance.pdf?dl=0" id="page-header-resume">resume</a></li> -->
-                              <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/resume.pdf" id="page-header-resume">resume</a></li>
+                              <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/stancillous.pdf" id="page-header-resume">resume</a></li>
                               
                               <div class="nav-mail-div">
                                     <p>Get in touch</p>
@@ -178,7 +178,7 @@ body{
     margin: 0 auto;
 
 
-    // opacity: 0;
+    opacity: 0;
     // position: relative;
     // THE DIV WITH THE ICONS ON THE LEFT SIDE OF THE PAGE 
     .social-links{
@@ -625,16 +625,16 @@ justify-content: center;
 
                             }
                             #animatingResumeButton{
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            height: 100%;
-                            width: 100%;
-                            background-color: rgb(255, 255, 255);
-                            z-index: -1;
-                            clip-path: inset(0 100% 0 0);
-                    
-                         }
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                background-color: rgb(255, 255, 255);
+                                z-index: -1;
+                                clip-path: inset(0 100% 0 0);
+                        
+                            }
 
                         }
 
@@ -654,17 +654,28 @@ justify-content: center;
                         border: 1px solid rgb(196, 190, 190);
                         // background-color: red;
                         .image{
-                            margin-top: -2rem;
-                            margin-left: -2rem;
                             height: 30rem;
-                            // width:30rem;
-                            width: 100%;
-                            max-width: 30rem;
-                            #img{
+                            width:30rem;
+                            #amimg{
                                 object-fit: cover;
                                 height: 100%;
                                 width: 100%;
-    
+
+                            }
+
+                            position: relative;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                height: 100%;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                background-color: blue;
+                                opacity: .2;
                             }
                         }
                     }
@@ -1046,6 +1057,9 @@ justify-content: center;
 .hamburger-button.hamburgerclicked{
     // position:fixed;
     transform: rotate(180deg);
+    position: fixed;
+    top: 5%;
+    right: 5%;
 
     span{
         background-color:white;
