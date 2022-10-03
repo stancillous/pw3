@@ -108,7 +108,7 @@
                             <a  target="_blank" class="code" href="https://github.com/stancillous/typing-app"><i class="fa-solid fa-code"></i></a>
 
                             <div class="github-and-external-link">
-                                <a target="_blank"  href="https://ray-typing-app.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank"  href="https://super-type.netlify.app//"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
 
