@@ -593,7 +593,10 @@ justify-content: center;
                         }
 
                         //THE BUTTON TO DOWNLOAD MY RESUME
-                        button{
+                        .resume-button-container{
+                          margin-top:2rem;
+                           
+                           button{
 
                             text-align: center;
                             color: rgb(255, 255, 255);
@@ -621,8 +624,6 @@ justify-content: center;
                                   color:white;
                                 }
                                 
-                                
-
                             }
                             #animatingResumeButton{
                                 position: absolute;
@@ -637,6 +638,9 @@ justify-content: center;
                             }
 
                         }
+                          
+                        }
+
 
 
                     }
