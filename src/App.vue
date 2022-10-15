@@ -520,6 +520,7 @@ justify-content: center;
                 height: .1rem;
                 width: 30%;
                 background-color: rgb(15, 15, 221);
+                background-color: rgba(185, 185, 201,.3);
                 // background-color: #AADCEC;
                 margin: 0 1.2rem;
             }
