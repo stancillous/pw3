@@ -27,7 +27,7 @@
                                     <li>SASS</li>
                                 </ul>
 
-                                <p id="education" class="about-paragraph">I am currently pursuing a degree in Actuarial Science ( faculty of Mathematics ) at the University of Nairobi.</p>
+                                <!--<p id="education" class="about-paragraph">I am currently pursuing a degree in Actuarial Science ( faculty of Mathematics ) at the University of Nairobi.</p>-->
 
 
 
