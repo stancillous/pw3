@@ -16,7 +16,7 @@
                   
                     </div>
                     <div class="info">
-                        <p class="info-paragraph fade-in-title">I love creating beautiful things that live on the web. I seek to create light, minimalistic <br>
+                        <p class="info-paragraph fade-in-title">I love creating beautiful things that live on the internet. I seek to create light, minimalistic <br>
                             animated web applications that solve user problems through effective solutions.</p>
         
                             <!-- <p class="info-paragraph fade-in-title">I love creating beautiful things for the web. I seek to create minimalistic websites that focus on smooth user experiences . -->
