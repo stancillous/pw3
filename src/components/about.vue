@@ -30,8 +30,10 @@
                                 <!--<p id="education" class="about-paragraph">I am currently pursuing a degree in Actuarial Science ( faculty of Mathematics ) at the University of Nairobi.</p>-->
 
 
-
-                                <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://stanceray.com/stancillous.pdf">my resume</a></button>
+                                <div class="resume-button-container">
+                                    <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://stanceray.com/stancillous.pdf">my resume</a></button>
+                                </div>
+                                
                          
                             </div>
     
