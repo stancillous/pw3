@@ -13,10 +13,10 @@
                     <!-- SPOTIFY PROJECT -->
                     <div class="project-info">
                         <div class="project-section-icons-container">
-                            <a  target="_blank" class="code" href="https://github.com/stancillous/spotify-vue-app"><i class="fa-solid fa-code"></i></a>
+                            <a  target="_blank" class="code" href="https://github.com/stancillous/spotify-wrapper-v4"><i class="fa-solid fa-code"></i></a>
 
                             <div class="github-and-external-link">
-                                <a  target="_blank" href="https://spotify-wrapper.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a  target="_blank" href="https://spotify-wrapper.netlify.app/login.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>   
 
