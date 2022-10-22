@@ -220,10 +220,6 @@ function linksClicked(){
 
 //FUNCTION TO SHOW THE MENU LINKS WHEN H.BUTTON IS CLICKED
 function showLInks(){
-
-    //TIMLINE TO ANIMATE THE HEADER LINKS WHEN THE BUTTON IS CLICKED
-    let aTagsTl =  gsap.timeline({paused:true})
-    aTagsTl.from('.menu-links-items',{x:-18,stagger:.1,ease:'power0.easeNone'})
    
 
     hamburgerButton.addEventListener('click',()=>{
@@ -232,18 +228,6 @@ function showLInks(){
       
         navlinks.classList.toggle('show-links')
         
-        
-        //animating the links only if the nav menu is showing
-        if(navlinks.classList.contains('show-links')){
-            aTagsTl.play()
-//             document.body.classList.add('hideOverflow')
-        }
-
-        else{
-            aTagsTl.reverse()
-//             document.body.classList.remove('hideOverflow')
-
-        }
 
     })
 }
