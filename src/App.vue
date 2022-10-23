@@ -52,6 +52,7 @@
       
       <div class="social-links">
           <div class="social-links-container">
+          
               <a id="linkedinSocialLink" class="social-links-icons" target="_blank" href="https://www.linkedin.com/in/stancillous/"><i class="fa-brands fa-linkedin"></i></a>
               <a id="githubSocialLink" class="social-links-icons" target="_blank" href="https://github.com/stancillous"><i class="fa-brands fa-github"></i></a>
               

@@ -134,17 +134,19 @@ function cursorAnimation(){
 
     //adding image to the cursor when hovering over the linkedin link
     ContactSectionLinkedin .addEventListener('mouseenter', () => {
-        cursor.setImg('./assets/linkedinImage.png')
+        cursor.setImg("./linkedinImage.png")
+
 
     });
 
     ContactSectionLinkedin .addEventListener('mouseleave', () => {
         cursor.removeImg()
+
     });
 
     //adding image when hovering over the behance link
     ContactSectionInstagram .addEventListener('mouseenter', () => {
-        cursor.setImg('./assets/behanceimage.png')
+        cursor.setImg('./instagramImage.png')
     });
 
     ContactSectionInstagram .addEventListener('mouseleave', () => {
@@ -154,7 +156,7 @@ function cursorAnimation(){
 
     //adding image when hovering over the github link
     contactSectionGithub .addEventListener('mouseenter', () => {
-        cursor.setImg('./assets/githubimage.png')
+        cursor.setImg('./githubimage.png')
     });
 
     contactSectionGithub .addEventListener('mouseleave', () => {
@@ -164,7 +166,7 @@ function cursorAnimation(){
 
     //adding image when hovering over the telegram link
     ContactSectionTelegram .addEventListener('mouseenter', () => {
-        cursor.setImg('./assets/telegramimage.png')
+        cursor.setImg('./telegramimage.png')
     });
 
     ContactSectionTelegram .addEventListener('mouseleave', () => {
