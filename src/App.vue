@@ -691,8 +691,8 @@
                         align-items: center;
                         justify-content: center;
                         .image-container{
-                            height: 30rem;
-                            width:30rem;
+                            height: 27rem;
+                            width:27rem;
                             border: 1px solid rgb(196, 190, 190);
                             // background-color: red;
                             .image{
