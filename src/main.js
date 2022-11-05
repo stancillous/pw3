@@ -3,8 +3,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 createApp(App).mount('#app')
+import gsap from 'gsap'
 
-import gsap from "gsap";
 import MouseFollower from "mouse-follower";
 import LocomotiveScroll from 'locomotive-scroll';
 
