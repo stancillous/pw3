@@ -8,11 +8,13 @@
                       <nav class="nav-bar">
                           <div class="logo">
                               <div class="logo-image-container">
-                                  <a class="logo-anchor" href="https://stanceray.com/"><img id="logo-image" src="./assets/cplogo.png" alt=""></a>
+                                <a href="https://stanceray.com/" class="top-page-logo lg">raymond</a>
+                                  <!-- <a class="logo-anchor" href="https://stanceray.com/"><img id="logo-image" src="./assets/cplogo.png" alt=""></a> -->
                               </div>
                           </div>
           
                           <div class="page-header-links">
+
                               <ul>
                                   <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#about-section-id">about</a></li>
                                   <li class="menu-links-items"><a data-scroll-to  class="menu-links-items-a" href="#projects-section-id">projects</a></li>
@@ -122,7 +124,6 @@
     $web-color:#000000;
     $web-color2:#00ff998f;
     $about-and-contact-color:#2007c2;
-    // $body-color:#dfeced;
     $body-color:rgb(202, 216, 248);
     
     $web-font1:"Satoshi", sans-serif;
@@ -151,6 +152,7 @@
     
     body{
         font-family: $web-font1,$web-font2,$web-font3;
+        font-family:$web-font2,$web-font3;
         // font-family: $web-font2;
         background-color: $body-color;
         overflow-x: hidden;
@@ -169,6 +171,7 @@
       
         span{
             background-color: rgb(58, 58, 58);
+            background-color: rgba(0, 0, 0, 0.609);
             border-radius: 5rem;
             margin: 0.5rem 0;
             padding: .1rem;
@@ -320,11 +323,19 @@
                 //LOGO
                 .logo{
                     position: absolute;
-                    left: 2%;
-                    top: 20%;
+                    left: 4%;
+                    top: 30%;
                     
     
                     .logo-image-container{
+                        .top-page-logo{
+                            text-decoration: none;
+                            color: black;
+                            opacity: .6;
+                            font-weight: $black;
+                            font-family: $web-font2,$web-font1,$web-font3;
+                            font-size: 2.4rem;
+                        }
     
                         a{
                             img{
@@ -340,13 +351,14 @@
                     align-items: center;
                     // border: 2px soild green;
                     // clip-path: circle(70.7% at 50% 50%);
+
                     ul li{
                         
                         list-style: none;
                         display: inline-block;
                         // list-style: lower-roman;
                         // color: rgb(255, 255, 255);
-                        a{
+                        .menu-links-items-a{
                             font-size: 1.4rem;
                             color: black;
                             
@@ -355,17 +367,27 @@
                             text-decoration: none;
                             padding: 0 1rem;
                             text-transform: lowercase;
-                            
-                            &:hover{
-                                opacity: 1;
-                               
+                            position: relative;
+
+                            &:hover::after{
+                                content: "";
+                                width: 40%;
+                                min-width: .85rem;
+                                height: 100%;
+                                top: 0;
+                                left: 2%;
+                                position: absolute;
+                                pointer-events: none;
+                                background-color: rgba(0, 0, 255,.3);
+                                
                             }
                     
                         }
                         #page-header-resume{
                             text-transform: uppercase;
                             font-weight: $bold;
-                            font-size: 1.1rem;
+                            text-transform: lowercase;
+                            font-size: 1.4rem;
                             color: black;
                             border: 1px solid black;
                             padding: .8rem 1.3rem;
@@ -384,16 +406,18 @@
                         p{
                             font-size: 1.4rem;
                             color: rgb(0, 0, 0);
+                            color: rgb(0, 0, 255);
                             opacity: .8;
-                            padding-bottom: .8rem;
                             font-weight: $medium;
+                            font-weight: 500;
+                            padding-bottom: .8rem;
                         }
     
                         a{
                             color: rgb(0, 0, 0);
                             // opacity: .9;
-                            font-size: 1.4rem;
-                            font-weight: $medium;
+                            font-size: 1.3rem;
+                            font-weight:600;
                             text-decoration: none;
                             position: relative;
                             &::after{
@@ -402,7 +426,7 @@
                                 height: .1rem;
                                 position: absolute;
                                 left: 0;
-                                background-color: grey;
+                                background-color: rgba(0, 0, 255, 0.334);
                                 bottom: -5%;
                                 right: 0;
     
@@ -425,8 +449,9 @@
                             a{
                                 color: rgb(0, 0, 0);
                                 font-size: 1.4rem;
-                                font-weight: $black;
-                                font-weight: $medium;
+                                color: rgba(0, 0, 255, 0.657);
+                                font-weight: $bold;
+                                // font-weight: $medium;
                                 text-transform: uppercase;
                                 position: relative;
        
@@ -464,11 +489,11 @@
             padding: .5rem;
             padding: 1rem 2rem;
             .greeting{
+                // border: 1px solid black;
                 h1{
                     font-size: 1.4rem;
                     // opacity: .5;
-                    font-weight: $medium;
-                    font-weight: $bold;
+                    font-weight: $black;
                     letter-spacing: .1rem;
                     color: black;
                     opacity: .7;
@@ -479,6 +504,8 @@
     
             //NAME
             .name{
+                // border: 1px solid black;
+                margin-top: .2rem;
                 h1{
                     // white-space: nowrap;
                     font-weight: $black;
@@ -491,6 +518,8 @@
     
             //PROFESSTION
             .profession{
+                // border: 1px solid black;
+                margin-top: .2rem;
     
                 h1{
                     font-size: 5.3rem;
@@ -504,12 +533,13 @@
     
             //INFO
             .info{
+                // border: 1px solid black;
+                margin-top: .2rem;
                 p{
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     font-weight: $bold;
                     padding: 1rem 0;
-                    font-weight: $medium;
-                    opacity: .9;
+                    opacity: .7;
                     color: black;
                 }
     
@@ -527,6 +557,7 @@
     .about-me-section{
         background-color: $about-and-contact-color;
         padding: 10rem 0;
+        // background-color: $body-color;
     
         .about-me-section-header-and-info{
     
@@ -544,9 +575,8 @@
                 justify-content: flex-start;
            
                 .about-me-title{
-                    font-weight: $medium;
-                    font-size: 2.3rem;
-                    font-weight: $black;
+                    font-size: 1.8rem;
+                    font-weight:600;
                     color: white;
                     opacity: .8;
                     text-transform: capitalize;
@@ -591,12 +621,10 @@
                                 // letter-spacing: .1rem;
                                 padding: 1rem 0;
                                 color: white;
-                                font-size: 1.6rem;
+                                font-size: 1.5rem;
                                 opacity: .9;
                                 font-weight: $regular;
-    
-                                line-height: 2.3rem;
-                                line-height: 132%;
+                                line-height: 152%;
     
                             }
     
@@ -622,9 +650,9 @@
                                     &::before{
                                         content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
                                         color: rgb(185, 172, 172); /* Change the color */
-                                        font-weight: bold; /* If you want it to be bold */
+                                        font-weight: lighter; /* If you want it to be bold */
                                         display: inline-block; /* Needed to add space between the bullet and the text */
-                                        width: 1rem; /* Also needed for space (tweak if needed) */
+                                        width: .7rem; /* Also needed for space (tweak if needed) */
                                         margin-left: -1em; /* Also needed for space (tweak if needed) */
                                     }
                                 }
@@ -637,13 +665,13 @@
                                button{
     
                                 text-align: center;
-                                color: rgb(255, 255, 255);
+                                color: rgba(255, 255, 255, 0.881);
                                 font-weight: $medium;
                                 font-size: 1.4rem;
                                 padding: 1rem 2rem;
                                 width: 19rem;
                                 background-color: transparent;
-                                border: 1px solid rgb(255, 255, 255);
+                                border: 1px solid rgba(255, 255, 255, 0.581);
                                 text-transform: uppercase;
                                 cursor: pointer;
                                 position: relative;
@@ -693,7 +721,7 @@
                         .image-container{
                             height: 27rem;
                             width:27rem;
-                            border: 1px solid rgb(196, 190, 190);
+                            // border: 1px solid rgb(196, 190, 190);
                             // background-color: red;
                             .image{
                                 height: 30rem;
@@ -740,7 +768,6 @@
         color: white;
         padding: 8rem 0;
     
-    
         .projects-section-container{
             height: 100%;
             // width: 80%;
@@ -757,11 +784,9 @@
                 padding: 2rem;
                 //PROJECTS TITLE
                 .projects-title{
-                    font-weight: $medium;
-                    font-weight: $black;
+                    font-weight: 600;
                     opacity: .9;
-                    font-size: 2.3rem;
-                    
+                    font-size: 1.8rem;
                     text-transform: capitalize;
                 }
     
@@ -826,18 +851,17 @@
                     }
                   
                     h1{
-                        font-size: 1.8em;
-                        opacity: .7;
+                        font-size: 1.5rem;
+                        opacity: .6;
                         padding-bottom: 1rem;
-                        font-weight:$medium;
                         text-transform: capitalize;
-                        font-weight: bold;
+                        font-weight: 600;
     
                     }
     
                     p{
                         font-weight: $regular;
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                         padding: 1rem 0;
                         padding-bottom: 2rem;
                         opacity: .7;
@@ -884,16 +908,16 @@
             margin: 0 auto;
     
             h1{
-                font-size: 3.5rem;
+                font-size: 2.2rem;
                 padding: 1rem 0;
                 text-align: center;
                 color: black;
-    
+                opacity: .8;
             }
     
             p{
                 font-weight: $medium;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 text-align: center;
                 padding-bottom: 1rem;
                 color: black;
@@ -909,19 +933,13 @@
                         justify-content: space-between;
                     }
     
-                    label{
-                        color: black;
-                        font-weight: $regular;
-                        // font-weight: $light;
-                        font-size: 1.5rem;
-                    }
     
                     //STYLING THE INPUT AND TEXTAREA
                     textarea,input{
                         border: none;
                         background-color: transparent;
                         font-weight: $bold;
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
                         color: black;
                         font-family: $web-font1,$web-font2;
                         padding: .8rem ;
@@ -930,7 +948,7 @@
                         //STYLING THE PLACEHOLDER
                         &::placeholder{
                             color: black;
-                            opacity: .9;
+                            opacity: .8;
                             font-size: 1.2rem;
                             font-weight: $regular;
                             text-transform: uppercase;
@@ -1016,13 +1034,15 @@
                 padding-bottom: 10rem;
                 h1{
                     font-weight: $regular;
-                    font-size: 5rem;
+                    font-weight: $medium;
+                    font-size: 4.4rem;
                     opacity: .9;
                 }
     
                 a{
-                    font-size: 4rem;
+                    font-size: 3.4rem;
                     font-weight: $regular;
+                    font-weight: $medium;
                     text-decoration: none;
                     position: relative;
                     color:white;
@@ -1052,17 +1072,18 @@
                   
                     //THE EMAIL ADDRESS
                     a{
-                        font-size: 2rem;
+                        font-size: 1.7rem;
                         font-weight: $medium;
                         text-decoration: none;
                         position: relative;
+                        opacity: .9;
                         color:white;
                         &::after{
                             content: '';
                             display: block;
                             height: .1rem;
                             position: absolute;
-                            background-color: lightgrey;
+                            background-color: rgba(211, 211, 211, 0.481);
                             left: 0;
                             bottom: -2%;
                             right: 0;
@@ -1098,14 +1119,14 @@
     
     .hamburger-button.hamburgerclicked{
         // position:fixed;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
         position: fixed;
         top: 5%;
         right: 5%;
     
         span{
             height: .2rem;
-            background-color:rgb(0, 0, 0);
+            background-color: rgba(0, 0, 255, 0.834);
             &:nth-child(1){
                 transform: translateY(.4rem) rotate(45deg);
     
@@ -1193,7 +1214,7 @@
                 font-size: 4rem;
             }
             .info p{
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 br{content:' ';}
                 br:after{content:' ';}
             }
@@ -1221,6 +1242,7 @@
         .hamburger-button{
             display: block;
             z-index: 1221;
+            top: 35%;
             // border: 2px solid;
             // position: absolute;
         }
@@ -1232,7 +1254,7 @@
                 .nav-bar{
     
                     .logo{
-                        left: 2.8%;
+                        left: 5%;
                         // background-color: red;
                     }
     
@@ -1244,7 +1266,6 @@
                         // right: -100vw;
                         height: 100vh;
                         width: 100vw;
-                        // clip-path: inset(0 0 0 100%);
                         opacity: 0;
                         visibility: hidden;
                     
@@ -1265,38 +1286,48 @@
                             justify-content: space-evenly;
     
                             li {
-                                a{
-                                    opacity: 1;
-                                    font-size: 1.6rem;
+                                .menu-links-items-a{
+                                    
+                                    font-size: 1.4rem;
                                     font-weight: $bold;
                                     font-size: 1.5rem;
-                                    text-transform: capitalize;
                                     color: rgb(0, 0, 0);
     
-                                    &:hover{
-                                            &::after{
-                                            content: '';
-                                            display: block;
-                                            height: .1rem;
-                                            position: absolute;
-                                            left: 0;
-                                            background-color: grey;
-                                            bottom: -5%;
-                                            right: 50%;
-    
-                                        }
-                                    
+                                    &::after{
+                                        content: "";
+                                        width: 20%;
+                                        min-width: .85rem;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 2%;
+                                        position: absolute;
+                                        pointer-events: none;
+                                        background-color: rgba(0, 0, 255, 0.374);
+                                        
                                     }
     
                                 }
          
                                 #page-header-resume{
-                                    font-size: 1.5rem;
+                                    font-size: 1.4rem;
                                     font-weight: $bold;
+                                    opacity: .7;
                                     border: none;
-                                    text-transform: capitalize;
+                                    text-transform: lowercase;
                                     color: rgb(0, 0, 0);
-                                    // border: 1px solid white;
+
+                                    &::after{
+                                        content: "";
+                                        width: 1.5rem;
+                                        min-width: .85rem;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 1%;
+                                        position: absolute;
+                                        pointer-events: none;
+                                        background-color: rgba(0, 0, 255, 0.374);
+                                        
+                                    }
                                 }
                             } 
                         }
@@ -1351,10 +1382,10 @@
             .contact-me{
                 padding: 3rem;
                 h1{
-                    font-size: 3.5rem;
+                    font-size: 3.3rem;
                 }
                 a{
-                    font-size: 2.8rem;
+                    font-size: 2.6rem;
                 }
             }
     
@@ -1387,24 +1418,70 @@
             }
         }
         //REDUCING SIZE OF IMAGE IN ABOUT SECTION
-        .about-me-section .about-me-section-header-and-info .about-me-flex-container .about-me-container .about-me-image .image-container{
-        height: 24rem;
-        width: 24rem;
+        .about-me-section .about-me-section-header-and-info .about-me-flex-container .about-me-container{
+
+        .about-me-info{
+            .about-me-info-paragraph{
+                p{
+                    font-size: 1.4rem;
+                    font-weight:$medium;
+                }
+
+                ul li{
+                    font-size: 1.3rem;
+
+                }
+            }
+        }
+        .about-me-image .image-container{
+            height: 24rem;
+            width: 24rem;
     
         .image{
             height: 24rem;
             max-width: 24rem;
         }
+        }
     
-    }
+        }
+
+        .projects-section .projects-section-container{
+            .projects-section-header{
+                .projects-title{
+                    font-size: 1.9rem;
     
-        .send-message-section .send-message-container .send-message-container-details #form .name-email-container{
+                }
+    
+    
+            }
+            .projects-section-details{
+                .project-info{
+                    padding: 4rem 2rem;
+                    p{
+                        font-size: 1.4rem;
+                        font-weight:$medium;
+
+                    }
+                }
+            }
+        }
+    
+        .send-message-section .send-message-container{
+            h1{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            .send-message-container-details #form .name-email-container{
             flex-direction: column;
     
             input{
                 width: 100%;
             }
         }
+
+        } 
     
         .contact-section .contact-section-container .contact-section-email-and-links{
             grid-template-columns: 1fr;
@@ -1424,6 +1501,9 @@
     
     @media screen and (max-width:480px) {
         .top-page-section .top-page-content .top-page-content-container{
+            .greeting h1{
+                font-size: 1.3rem;
+            }
             .name h1{
                 font-size: 3rem;
             }
@@ -1440,40 +1520,15 @@
             .about-me-header .about-me-title{
                 font-size: 1.9rem;
             }
-            .about-me-flex-container .about-me-container .about-me-info .about-me-info-paragraph{
-                p{
-                    font-size: 1.5rem;
-                }
-            }
-    
+  
     
         } 
     
-        .projects-section .projects-section-container{
-            .projects-section-header{
-                .projects-title{
-                    font-size: 1.9rem;
-    
-                }
-    
-    
-            }
-            .projects-section-details{
-                .project-info{
-                    padding: 4rem 2rem;
-                    p{
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-        }
+
     
         .send-message-section .send-message-container {
-            h1{
-                font-size: 3rem;
-            }
+
             p{
-                font-size: 1.8rem;
                 br{content:' ';}
                 br:after{content:' ';}
             }
@@ -1493,12 +1548,13 @@
             .contact-section-email-and-links{
                 .contact-section-email{
                     a{
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
                     }
                 }
                 .contact-section-links{
                     a{
-                        font-size: 1.6rem;
+                        font-size: 1.4rem;
+                        font-weight: $regular;
                     }
                 }
             }
