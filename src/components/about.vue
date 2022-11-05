@@ -5,7 +5,7 @@
             <div data-scroll data-scroll-speed="-1" class="about-me-section-header-and-info">
               
                 <div class="about-me-header">
-                    <h1 class="about-me-title">about me</h1>
+                    <h1 class="about-me-title fade-in-ams">about me</h1>
                     <div class="about-section-line"></div>
                 </div>
 
@@ -14,11 +14,11 @@
                     <div class="about-me-container">
                         <div class="about-me-info">
                             <div class="about-me-info-paragraph">
-                                <p class="about-paragraph">Hi, my name is Raymond, a front-end web developer. I enjoy building things for the web.</p>
-                                <p class="about-paragraph"> My keen interest in web development started while at university and since then I have been exposed to exciting and sharp new technologies. I strive to develop eye-catching web apps and websites with accessible interfaces and great experiences.</p>
-                                <p>Some of the technologies I have been using :</p>
+                                <p class="about-paragraph fade-in-ams">Hi, my name is Raymond, a front-end web developer. I enjoy building things for the web.</p>
+                                <p class="about-paragraph fade-in-ams"> My keen interest in web development started while at university and since then I have been exposed to exciting and sharp new technologies. I strive to develop eye-catching web apps and websites with accessible interfaces and great experiences.</p>
+                                <p class="fade-in-ams">Some of the technologies I have been using :</p>
                                 
-                                <ul>
+                                <ul class="tech-ul fade-in-ams">
                                     <li>Javascript</li>
                                     <li>Vue.js</li>
                                     <li>TypeScript</li>
@@ -27,10 +27,8 @@
                                     <li>SASS</li>
                                 </ul>
 
-                                <!--<p id="education" class="about-paragraph">I am currently pursuing a degree in Actuarial Science ( faculty of Mathematics ) at the University of Nairobi.</p>-->
-
-
-                                <div class="resume-button-container">
+         
+                                <div class="resume-button-container fade-in-ams">
                                     <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://stanceray.com/stancillous.pdf">my resume</a></button>
                                 </div>
                                 
