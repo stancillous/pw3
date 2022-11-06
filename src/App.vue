@@ -732,7 +732,7 @@
                                 .img-b-line{
                                     height: 100%;
                                     width: 100%;
-                                    border: 1.5rem dotted rgb(174, 164, 164);
+                                    border:.2rem dotted rgb(174, 164, 164);
                                 }
                                 #amimg{
                                     object-fit: cover;
