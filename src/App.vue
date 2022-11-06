@@ -726,27 +726,37 @@
                             .image{
                                 height: 30rem;
                                 width:30rem;
+                                position:relative;
+                                
+                                //the line behind the image
+                                .img-b-line{
+                                    height: 100%;
+                                    width: 100%;
+                                    border: 1px dotted rgb(174, 164, 164);
+                                }
                                 #amimg{
                                     object-fit: cover;
                                     height: 100%;
                                     width: 100%;
-    
-                                }
-    
-                                position: relative;
-    
-                                &::after{
-                                    content: '';
-                                    display: block;
                                     position: absolute;
-                                    top: 0;
-                                    height: 100%;
-                                    width: 100%;
-                                    bottom: 0;
-                                    left: 0;
-                                    background-color: blue;
-                                    opacity: .2;
+                                    bottom: 1.5rem;
+                                    right: 1.5rem;
+
+
                                 }
+    
+                                //&::after{
+                                  //  content: '';
+                                    //display: block;
+                                    //position: absolute;
+                                    //top: 0;
+                                    //height: 100%;
+                                    //width: 100%;
+                                    //bottom: 0;
+                                    //left: 0;
+                                    //background-color: blue;
+                                    //opacity: .2;
+                                //}
                             }
                         }
                     }
