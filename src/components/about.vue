@@ -14,7 +14,7 @@
                     <div class="about-me-container">
                         <div class="about-me-info">
                             <div class="about-me-info-paragraph">
-                                <p class="about-paragraph fade-in-ams">Hi, my name is Raymond, a front-end web developer. I enjoy building things for the web.</p>
+                                <p class="about-paragraph fade-in-ams">Hi, my name is Raymond, a front-end developer. I enjoy building things for the web.</p>
                                 <p class="about-paragraph fade-in-ams"> My keen interest in web development started while at university and since then I have been exposed to exciting and sharp new technologies. I strive to develop eye-catching web apps and websites with accessible interfaces and great experiences.</p>
                                 <p class="fade-in-ams">Some of the technologies I have been using :</p>
                                 
