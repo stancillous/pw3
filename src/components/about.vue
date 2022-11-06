@@ -40,9 +40,11 @@
                         <div class="about-me-image">
                             <div class="image-container">
                                 
-                                <!-- <div class="image"><img id="img" src="" alt="image"></div> -->
                                 <div class="image">
-                                    <!-- <img id="amimg" src="../assets/img.svg" alt=""> -->
+                                    
+                                    <div class="img-b-line"></div>
+                                        
+                                    
                                     <svg id="amimg" width="666" height="666" viewBox="0 0 666 666" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="666" height="666" fill="url(#pattern0)"/>
                                         <defs>
