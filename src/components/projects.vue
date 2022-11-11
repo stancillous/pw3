@@ -53,27 +53,6 @@
 
                     </div>
                     
-                    <!-- SIMPLY NOTES  -->
-                    <div class="project-info">
-                        <div class="project-section-icons-container">
-                            <a  target="_blank" class="code" href="https://github.com/stancillous/simply-notes"><i class="fa-solid fa-code"></i></a>
-
-                            <div class="github-and-external-link">
-                                <a  target="_blank" href="https://simplynotes.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>   
-
-                        <h1>simply notes</h1>
-                        <p>A customizable note app. Select what theme to use and choose fonts from more than 6 different font families. Intergrated with local storage.</p>
-                        <div class="tech-used-container">
-                            <span class="tech-used">Local storage</span>
-                            <span class="tech-used">JS</span>
-          
-                        </div>
-
-                    </div>  
-                     
-
                     <!-- LOMPASAGO PROJECT -->
                     <div class="project-info">
 
@@ -98,7 +77,6 @@
     
                     </div>
 
-     
 
                     <!-- TYPING APP PROJECT -->
                     <div class="project-info">
@@ -121,6 +99,27 @@
                         </div>
     
                     </div>
+                    
+                    <!-- SIMPLY NOTES  -->
+                    <div class="project-info">
+                        <div class="project-section-icons-container">
+                            <a  target="_blank" class="code" href="https://github.com/stancillous/simply-notes"><i class="fa-solid fa-code"></i></a>
+
+                            <div class="github-and-external-link">
+                                <a  target="_blank" href="https://simplynotes.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>   
+
+                        <h1>simply notes</h1>
+                        <p>A customizable note app. Select what theme to use and choose fonts from more than 6 different font families. Intergrated with local storage.</p>
+                        <div class="tech-used-container">
+                            <span class="tech-used">Local storage</span>
+                            <span class="tech-used">JS</span>
+          
+                        </div>
+
+                    </div>
+                    
 
                     <!-- WEATHER WEB APP -->
                     <div class="project-info">
