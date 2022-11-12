@@ -16,11 +16,11 @@
                             <a  target="_blank" class="code" href="https://github.com/stancillous/my-muzik-v4"><i class="fa-solid fa-code"></i></a>
 
                             <div class="github-and-external-link">
-                                <a  target="_blank" href="https://my-muzik.netlify.app/login.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a  target="_blank" href="https://my-muzik.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>   
 
-                        <h1>Spotify Wrapper</h1>
+                        <h1>Spotify Connected App</h1>
                         <p>Integrated with Spotify's API, this web app shows personalized Spotify data. View recently played tracks, top songs, top artists and more. Get recommended artists based on your top artists.</p>
                         <div class="tech-used-container">
                             <span class="tech-used">Vue.js</span>
