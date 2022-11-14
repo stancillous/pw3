@@ -5,8 +5,6 @@
 
                 <div class="contact-me">
                     <h1 id="contact-me-header">Have a project in mind?</h1>
-                    <!-- <a href="">contact me</a> -->
-                    <!-- <a  class="contact-tag" href="mailto:stancillousray@gmail.com">Let's make something great together</a> -->
                     <a  class="contact-tag" href="mailto:stancillousray@gmail.com">Let's make it happen!</a>
                 </div>
 

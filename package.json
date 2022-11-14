@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "author":"Stancillous Raymond (https://stanceray.com/)",
+  "description":"third iteration of my personal website",
+  "version": "0.3.0",
+  "homepage": "https://github.com/stancillous/pw3#readme",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
