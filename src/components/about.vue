@@ -43,8 +43,7 @@
                                 <div class="image">
                                     
                                     <div class="img-b-line"></div>
-                                        
-                                    
+
                                     <svg id="amimg" width="666" height="666" viewBox="0 0 666 666" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="666" height="666" fill="url(#pattern0)"/>
                                         <defs>
@@ -66,6 +65,7 @@
 
         </section>
     </div>
+
 </template>
 
 <script>

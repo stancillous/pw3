@@ -85,7 +85,6 @@ function cursorAnimation(){
 
     })
 
-
      //SETTING TEXT TO THE SOCIAL MEDIA ICONS FIXED ON THE PAGE
      document.querySelector('#linkedinSocialLink').addEventListener('mouseenter',()=>{
         cursor.setText('linkedin')
@@ -102,7 +101,6 @@ function cursorAnimation(){
         cursor.removeText('github')
     })
 
-
     //SETTING TEXT TO THE SOCIAL MEDIA ICONS FIXED ON THE PAGE
     document.querySelector('#instagramSocialLink').addEventListener('mouseenter',()=>{
         cursor.setText('instagram')
@@ -110,7 +108,6 @@ function cursorAnimation(){
     document.querySelector('#instagramSocialLink').addEventListener('mouseleave',()=>{
         cursor.removeText('instagram')
     })
-
 
     //SETTING TEXT TO THE SOCIAL MEDIA ICONS FIXED ON THE PAGE
     document.querySelector('#telegramSocialLink').addEventListener('mouseenter',()=>{
@@ -120,66 +117,7 @@ function cursorAnimation(){
         cursor.removeText('telegram')
     })
 
-
-
-
-
-    //SELECTING THE a TAGS IN THE CONTACT SECTION
-    const ContactSectionLinkedin  = document.querySelector('#contactSectionLinkedin');
-    const ContactSectionInstagram = document.querySelector('#contactSectionInstagram');
-    const contactSectionGithub = document.querySelector('#contactSectionGithub');
-    const ContactSectionTelegram = document.querySelector('#contactSectionTelegram');
-
-    
-
-    //adding image to the cursor when hovering over the linkedin link
-    ContactSectionLinkedin .addEventListener('mouseenter', () => {
-        cursor.setImg("./linkedinImage.png")
-
-
-    });
-
-    ContactSectionLinkedin .addEventListener('mouseleave', () => {
-        cursor.removeImg()
-
-    });
-
-    //adding image when hovering over the behance link
-    ContactSectionInstagram .addEventListener('mouseenter', () => {
-        cursor.setImg('./instagramImage.png')
-    });
-
-    ContactSectionInstagram .addEventListener('mouseleave', () => {
-        cursor.removeImg()
-    });
-
-
-    //adding image when hovering over the github link
-    contactSectionGithub .addEventListener('mouseenter', () => {
-        cursor.setImg('./githubimage.png')
-    });
-
-    contactSectionGithub .addEventListener('mouseleave', () => {
-        cursor.removeImg()
-    });
-
-
-    //adding image when hovering over the telegram link
-    ContactSectionTelegram .addEventListener('mouseenter', () => {
-        cursor.setImg('./telegramimage.png')
-    });
-
-    ContactSectionTelegram .addEventListener('mouseleave', () => {
-        cursor.removeImg()
-    });
-
- 
-
-
-
 }
-
-// cursorAnimation()
 
 
 // INITIALIZING THE LOCOMOTIVE SCROLL
@@ -193,12 +131,10 @@ function initLocomotiveScroll(){
     scroll.scrollTo();
 }
 
-// initLocomotiveScroll()
 
 const hamburgerButton = document.querySelector('.hamburger-button') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
 const aLinks = document.querySelectorAll('.menu-links-items-a')  //the a tags in the header section
-
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
 const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
@@ -209,7 +145,6 @@ function linksClicked(){
 
     aLinks.forEach((item)=>{
         //HIDING THE MENU LINKS CONTAINER WHEN A LINK IS CLICKED
-
         item.addEventListener('click',()=>{
             navlinks.classList.remove('show-links')  //HIDE THE LINKS CONTAINER
             hamburgerButton.classList.remove('hamburgerclicked') //REMOVE THE ANIMATION ON THE HAMBURGER BUTTON
@@ -221,15 +156,9 @@ function linksClicked(){
 
 //FUNCTION TO SHOW THE MENU LINKS WHEN H.BUTTON IS CLICKED
 function showLInks(){
-   
-
     hamburgerButton.addEventListener('click',()=>{
-
         hamburgerButton.classList.toggle('hamburgerclicked')
-      
         navlinks.classList.toggle('show-links')
-        
-
     })
 }
 // showLInks()
@@ -244,14 +173,12 @@ function pageTimelines(){
 
     topPageSectionTl.fromTo('.main',{opacity:0},{opacity:1,ease:'none'})
             .from('.menu-links-items',{y:-33,opacity:0,stagger:.05,duration:.6}) //the menu links
-            .from('#logo-image',{opacity:0},'<') //the logoimage
+            .from('.top-page-logo',{opacity:0},'<') //the logoimage
             .from('.hamburger-button',{opacity:0},'<') //the hamburger button
             .from('.fade-in-title',{opacity:0,y:33,stagger:.1,duration:.6}) //animating the names on the top page section
             .fromTo('.social-links',{opacity:0},{opacity:1})  // the div on the left side with the social media icons
             .fromTo('.navigate-div',{opacity:0},{opacity:1},'<') //the line on the right side of the page
 
-
-    
 
     //TIMELINE TO ANIMATE THE 'MY RESUME' BUTTON WHEN HOVERED ON
     let resumeBtnTl = gsap.timeline({paused:true})
@@ -268,11 +195,7 @@ function pageTimelines(){
         resumeBtnTl.reverse()
         document.querySelector('.download-resume').style.color = 'white'
         document.querySelector('.download-resume').style.fontWeight = '500'
-
-
     })
-    
-
 
     //TIMELINE TO ANIMATE THE SUBMIT BUTTON WHEN HOVERED ON
     let submitBtnTl = gsap.timeline({paused:true})
@@ -286,13 +209,9 @@ function pageTimelines(){
     submitBtn.addEventListener('mouseleave',()=>{
         submitBtnTl.reverse()
         submitBtn.style.color = 'black'
-
-
     })
                 
 }
-
-// pageTimelines()
 
 
 //ANIMATING THE DIVS WITH THE PROJECT INFO WHEN HOVERED ON
@@ -309,4 +228,5 @@ projectsInfoDiv.forEach((item)=>{
     projectsInfoDivTl.reverse()  
     })
 })
+
 
