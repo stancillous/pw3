@@ -186,10 +186,6 @@
     }
     
     .main{
-        // width: 80%;
-        // height: 100%;
-        // width: 1400px;
-        // width: 100%;
         margin: 0 auto;
     
     
@@ -294,7 +290,6 @@
     
     //HEADER
     .page-header{
-        // border: 1px solid;
         position: absolute;
         width: 100%;
         height: 15vh;
@@ -466,7 +461,6 @@
     }
     
     .top-page-section{
-    
     height: 100vh;
     // border: 4px solid blue;
     display: flex;
@@ -768,7 +762,6 @@
     
     
     }
-    
     //PROJECTS SECTION
     .projects-section{
         // border: 1px solid;
@@ -903,9 +896,7 @@
     
     
     }
-    
     //SEND ME A MESSAGE SECTION
-    
     .send-message-section{
         background-color:$body-color;
         padding: 20rem 0;
@@ -1025,7 +1016,6 @@
         }
     }
     
-    
     //CONTACT SECTION
     .contact-section{
         background-color: $about-and-contact-color;
@@ -1121,7 +1111,6 @@
         }
     
     }
-    
     
     // CLASSES TO BE TOGGLED ARE HERE
     

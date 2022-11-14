@@ -200,7 +200,6 @@ const navlinks  = document.querySelector('.page-header-links') //the links conta
 const aLinks = document.querySelectorAll('.menu-links-items-a')  //the a tags in the header section
 
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
-
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
 const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
 
