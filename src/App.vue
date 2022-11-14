@@ -1,32 +1,24 @@
 <template>
-
+    
     <main data-scroll-container class="main">
-    
-    
       <header data-scroll-section class="page-header">
                   <div class="page-header-container" data-cursor="-hidden">
                       <nav class="nav-bar">
                           <div class="logo">
                               <div class="logo-image-container">
                                 <a href="https://stanceray.com/" class="top-page-logo lg">raymond</a>
-                                  <!-- <a class="logo-anchor" href="https://stanceray.com/"><img id="logo-image" src="./assets/cplogo.png" alt=""></a> -->
                               </div>
                           </div>
-          
                           <div class="page-header-links">
-
                               <ul>
                                   <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#about-section-id">about</a></li>
                                   <li class="menu-links-items"><a data-scroll-to  class="menu-links-items-a" href="#projects-section-id">projects</a></li>
                                   <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#contact-section-id">contact</a></li>
-                                  <!-- <li class="menu-links-items"><a target="_blank" href="https://www.dropbox.com/s/0ricmr9cpgr9tks/stance.pdf?dl=0" id="page-header-resume">resume</a></li> -->
                                   <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/stancillous.pdf" id="page-header-resume">resume</a></li>
-                                  
                                   <div class="nav-mail-div">
                                         <p>Get in touch</p>
                                         <a id="nav-mail" href="mailto:stancillousray@gmail.com">stancillousray@gmail.com</a>
-                                </div>
-    
+                                   </div>
                                     <div class="social-links-container">
                                         <div class="social-links-a-div">
                                             <a target="_blank" href="https://github.com/stancillous">gh</a>
@@ -36,39 +28,36 @@
                                         </div>
                                     </div>
                                 </ul>
-                                
-          
-          
                           </div>
                       </nav>
                   </div>
-          
                       <!-- HAMBURGER BUTTON -->
                   <div class="hamburger-button">
                       <span></span>
                       <span></span>
                   </div>
-          
       </header>
-      
-      
       <div class="social-links">
           <div class="social-links-container">
-          
-              <a id="linkedinSocialLink" class="social-links-icons" target="_blank" href="https://www.linkedin.com/in/stancillous/"><i class="fa-brands fa-linkedin"></i></a>
-              <a id="githubSocialLink" class="social-links-icons" target="_blank" href="https://github.com/stancillous"><i class="fa-brands fa-github"></i></a>
-              
-              <!-- <a id="instagramSocialLink" class="social-links-icons" target="_blank" href="https://www.instagram.com/stancillous/"><i class="fa-brands fa-instagram"></i></a> -->
-              <a id="instagramSocialLink" class="social-links-icons" target="_blank" href="https://www.instagram.com/stancillous/"><i class="fa-brands fa-square-instagram"></i></a>
-              <a id="telegramSocialLink" class="social-links-icons" target="_blank" href="https://t.me/Stancillous"><i class="fa-brands fa-telegram"></i></a>
+              <a id="linkedinSocialLink" class="social-links-icons" target="_blank" href="https://www.linkedin.com/in/stancillous/">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            <a id="githubSocialLink" class="social-links-icons" target="_blank" href="https://github.com/stancillous">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>      
+              </a>
+              <a id="instagramSocialLink" class="social-links-icons" target="_blank" href="https://www.instagram.com/stancillous/">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a id="telegramSocialLink" class="social-links-icons" target="_blank" href="https://t.me/Stancillous">
+                <img src="./assets/tg.svg" alt="">
+              </a>
               <div class="line"></div>
           </div>
-      
       </div>
-      
-      
       <div class="navigate-div">
-    
         <div class="navigate-buttons">
             <div class="nav-buttons-div "><a data-scroll-to class="a" href="#top-page-section-id"></a></div>
             <div class="nav-buttons-div"><a data-scroll-to class="a" href="#about-section-id"></a></div>
@@ -78,19 +67,13 @@
             <div class="right-line"></div>
         </div>
       </div>
-      
       <topSectionComp/>
       <aboutComp/>
       <projectsComp/>
       <contactComp/>
       <bottomSectionComp/>
-    
-      
-    
     </main>
-    
-    
-    </template>
+</template>
     
     <script>
       import topSectionComp from './components/topsection.vue'
@@ -165,7 +148,6 @@
         right: 5%;
         cursor: pointer;
         display: none;
-        // z-index: 444;  //Z INDEX SHOULD BE HIGHER THAN THE LINKS CONTAINER
         transform: rotate(0deg);
         transition:  transform .5s ease;
       
@@ -185,22 +167,18 @@
         }
     }
     
+    
     .main{
         margin: 0 auto;
-    
-    
         opacity: 0;
-        // position: relative;
         // THE DIV WITH THE ICONS ON THE LEFT SIDE OF THE PAGE 
         .social-links{
             position: fixed;
             height: 100%;
             bottom: 2%;
-            left: 3%;
+            left: 2%;
             bottom: 0;
             z-index: 23;
-    
-    
             .social-links-container{
                 // z-index: 4444;
                 height: 100%;
@@ -210,17 +188,15 @@
                 justify-content: flex-end;
                 align-items: flex-end;
                 align-items: center;
-                
                 a{
                     color: black;
-                    i{
-                        color: rgb(0, 0, 0);
-                        font-size: 1.8rem;
+                    svg,img{
+                        width: 2rem;
                         margin: 1rem 0;
-                        opacity: .6;
+                        filter: drop-shadow(1px 1px 0px rgb(202, 216, 248));
+                        opacity: .7;
                     }
                 }
-    
                 //THE LINE ON THE LEFT SIDE OF THE PAGE
                 .line{
                     height: 11rem;
@@ -229,50 +205,34 @@
                     background-color: #44544d;
                 }
             }
-    
-    
-    
         }
-    
-    
         // THE DIV ON THE RIGHT PAGE USED FOR NAVIGATING TO DIFF SECTIONS
         .navigate-div{
             position: fixed;
-            right: 5%;
+            right: 3%;
             bottom: 0;
             height: 100vh;
-            // border: 2px solid white;
             z-index: 43;
-    
             .navigate-buttons{
-                // border: 1px solid red;
                 height: 100%;
                 display: flex;
-                // border: 2px solid red;
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: flex-end;
                 align-items: center;
-                
                 .nav-buttons-div{
                     height: .9rem;
                     width: .9rem;
                     background-color: rgb(0, 0, 0);
-                    // background-color: $web-color2;
-                    // border-radius: 50%;
                     transform: rotate(45deg);
                     border: 1px solid black;
                     background-color: $body-color;
                     margin: 1rem 0;
                     opacity: .6;
                     padding: .1rem;
-    
                     a{
                         padding: 0 2rem;
-                        // border: 2px solid;
                         margin-left: -2rem;
-    
-    
                     }
                 }
                 //THE LINE ON THE LEFT SIDE OF THE PAGE
@@ -284,8 +244,6 @@
                 }
             }
         }
-    
-     
     }
     
     //HEADER
@@ -293,35 +251,28 @@
         position: absolute;
         width: 100%;
         height: 15vh;
-        // border: 2px solid;
         z-index: 323;
         top: 0;
         left: 0;
         transition: all .5s ease-in-out;
-    
         .page-header-container{
-            // border: 2px solid red;
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-    
             .nav-bar{
-                width: 87%;
+                width: 93%;
                 height: 100%;
-                // border: 2px solid blue;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
                 //LOGO
                 .logo{
                     position: absolute;
-                    left: 4%;
+                    left: 2%;
                     top: 30%;
-                    
-    
                     .logo-image-container{
                         .top-page-logo{
                             text-decoration: none;
@@ -331,24 +282,14 @@
                             font-family: $web-font2,$web-font1,$web-font3;
                             font-size: 2.4rem;
                         }
-    
-                        a{
-                            img{
-                                width: 5rem;
-                            }
-                        }
+  
                     }
-       
                 }
                 //MENU LINKS
                 .page-header-links{
                     display: flex;
                     align-items: center;
-                    // border: 2px soild green;
-                    // clip-path: circle(70.7% at 50% 50%);
-
                     ul li{
-                        
                         list-style: none;
                         display: inline-block;
                         // list-style: lower-roman;
@@ -356,14 +297,12 @@
                         .menu-links-items-a{
                             font-size: 1.4rem;
                             color: black;
-                            
                             opacity: .7;
                             font-weight: $bold;
                             text-decoration: none;
                             padding: 0 1rem;
                             text-transform: lowercase;
                             position: relative;
-
                             &:hover::after{
                                 content: "";
                                 width: 40%;
@@ -374,7 +313,6 @@
                                 position: absolute;
                                 pointer-events: none;
                                 background-color: rgba(0, 0, 255,.3);
-                                
                             }
                     
                         }
@@ -388,16 +326,11 @@
                             padding: .8rem 1.3rem;
                             text-decoration: none;
                         }
-    
-    
-    
                     }
-    
                     //DIV TO BE SHOWN ON SMALL SCREENS WITH THE GET IN TOUCH MESSAGE AND EMAIL
                     .nav-mail-div{
                         margin-top: 2rem;
                         display:none;
-    
                         p{
                             font-size: 1.4rem;
                             color: rgb(0, 0, 0);
@@ -407,7 +340,6 @@
                             font-weight: 500;
                             padding-bottom: .8rem;
                         }
-    
                         a{
                             color: rgb(0, 0, 0);
                             // opacity: .9;
@@ -424,19 +356,15 @@
                                 background-color: rgba(0, 0, 255, 0.334);
                                 bottom: -5%;
                                 right: 0;
-    
                             }
                         }
                     }
-    
                     //DIV WITH THE SOCIAL LINKS
                     .social-links-container{
                         // border: 1px solid red;
                         width: 60vw;
                         display: none;
-    
                         .social-links-a-div{
-                            // border: 1px solid white;
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             grid-gap:1rem;
@@ -449,36 +377,27 @@
                                 // font-weight: $medium;
                                 text-transform: uppercase;
                                 position: relative;
-       
                             }
                         }
                     }
-    
-    
                 }
             }
         }
     }
-    
+
     .top-page-section{
     height: 100vh;
-    // border: 4px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-    
     //DIV WITH THE TOP SECTION CONTENT
     .top-page-content{
          height: 100%;
         width: 90%;
-    
         display: flex;
         align-items: center;
         justify-content: center;
         // border: 1px solid red;
-        
         .top-page-content-container{
             padding: .5rem;
             padding: 1rem 2rem;
@@ -495,7 +414,6 @@
                     padding: 0 0 0 .8rem;
                 }
             }
-    
             //NAME
             .name{
                 // border: 1px solid black;
@@ -509,12 +427,10 @@
                     opacity: .8;
                 }
             }
-    
             //PROFESSTION
             .profession{
                 // border: 1px solid black;
                 margin-top: .2rem;
-    
                 h1{
                     font-size: 5.3rem;
                     opacity: .6;
@@ -524,7 +440,6 @@
                     // font-weight: $medium;
                 }
             }
-    
             //INFO
             .info{
                 // border: 1px solid black;
@@ -536,29 +451,20 @@
                     opacity: .7;
                     color: black;
                 }
-    
             }
         }
     }
-    
-    
-    
-    
-    
     }
-    
+
     // ABOUT ME SECTION
     .about-me-section{
         background-color: $about-and-contact-color;
         padding: 10rem 0;
         // background-color: $body-color;
-    
         .about-me-section-header-and-info{
-    
             max-width: 1000px;
             padding: 2rem 6rem;
             margin: 0 auto;
-    
             //THE TITLE
             .about-me-header{
                 // border: 1px solid white;
@@ -567,14 +473,12 @@
                 padding:0 1rem;
                 justify-content: center;
                 justify-content: flex-start;
-           
                 .about-me-title{
                     font-size: 1.8rem;
                     font-weight:600;
                     color: white;
                     opacity: .8;
                     text-transform: capitalize;
-    
                 }
                 //THE LINES BEFORE AND AFTER THE ABOUT HEADER
                 .about-section-line{
@@ -585,9 +489,7 @@
                     // background-color: #AADCEC;
                     margin: 0 1.2rem;
                 }
-    
             }
-    
             //THE DIV WITH ABOUT ME TEXT AND IMAGE
             .about-me-flex-container{
                 // border: 2px solid green;
@@ -597,11 +499,9 @@
                 align-items: center;
                 justify-content: center;
                 .about-me-container{
-    
                     // border: 1px solid lightblue;
                     // padding: 2rem 0;
                     width: 100%;
-    
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     .about-me-info{
@@ -619,20 +519,16 @@
                                 opacity: .9;
                                 font-weight: $regular;
                                 line-height: 152%;
-    
                             }
-    
                             #education{
                                 margin-bottom: 3rem;
                                 margin-top: 2rem;
                             }
-    
                             ul{
                                 // border: 2px solid;
                                 // margin-bottom: 3rem;
                                 display: grid;
                                 grid-template-columns: 1fr 1fr 1fr;
-    
                                 li{
                                     list-style-type: none;
                                     font-size: 1.4rem;
@@ -640,7 +536,6 @@
                                     color: white;
                                     padding: .4rem ;
                                     opacity: .7;
-    
                                     &::before{
                                         content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
                                         color: rgb(185, 172, 172); /* Change the color */
@@ -651,17 +546,14 @@
                                     }
                                 }
                             }
-    
                             //THE BUTTON TO DOWNLOAD MY RESUME
                             .resume-button-container{
                               margin-top:2rem;
-                               
                                button{
-    
                                 text-align: center;
                                 color: rgba(255, 255, 255, 0.881);
                                 font-weight: $medium;
-                                font-size: 1.4rem;
+                                font-size: 1.2rem;
                                 padding: 1rem 2rem;
                                 width: 19rem;
                                 background-color: transparent;
@@ -669,21 +561,16 @@
                                 text-transform: uppercase;
                                 cursor: pointer;
                                 position: relative;
-    
-                                
                                 a{
                                     text-decoration: none;
                                     color: white;
                                     font-weight: $medium;
-                                    
                                     &:active{
                                       color:white;
                                     }
-                                    
                                     &:visited{
                                       color:white;
                                     }
-                                    
                                 }
                                 #animatingResumeButton{
                                     position: absolute;
@@ -694,19 +581,11 @@
                                     background-color: rgb(255, 255, 255);
                                     z-index: -1;
                                     clip-path: inset(0 100% 0 0);
-                            
                                 }
-    
                             }
-                              
                             }
-    
-    
-    
                         }
-        
                     }
-            
                     .about-me-image{
                         // border: 2px solid blue;
                         display: flex;
@@ -721,7 +600,6 @@
                                 height: 30rem;
                                 width:30rem;
                                 position:relative;
-                                
                                 //the line behind the image
                                 .img-b-line{
                                     height: 100%;
@@ -735,50 +613,28 @@
                                     position: absolute;
                                     bottom: 1.5rem;
                                     right: 1.5rem;
-
-
                                 }
-    
-                                //&::after{
-                                  //  content: '';
-                                    //display: block;
-                                    //position: absolute;
-                                    //top: 0;
-                                    //height: 100%;
-                                    //width: 100%;
-                                    //bottom: 0;
-                                    //left: 0;
-                                    //background-color: blue;
-                                    //opacity: .2;
-                                //}
+
                             }
                         }
                     }
                 }
-    
             }
-    
         }
-    
-    
     }
     //PROJECTS SECTION
     .projects-section{
-        // border: 1px solid;
         height: 100vh,auto;
         background-color: rgb(7, 6, 65);
         // background-color: blue
         color: white;
         padding: 8rem 0;
-    
         .projects-section-container{
             height: 100%;
             // width: 80%;
             max-width: 1200px;
-            // border: 1px solid red;
             padding: 0 2rem;
             margin: 0 auto;
-    
             //DIV WITH THE TITLE
             .projects-section-header{
                 display: flex;
@@ -792,7 +648,6 @@
                     font-size: 1.8rem;
                     text-transform: capitalize;
                 }
-    
                 //THE LINE NEXT TO THER PROJECTS TITLE
                 .projects-section-line{
                     height: .004rem;
@@ -801,67 +656,48 @@
                     // background-color: #AADCEC;
                     margin: 0 1.2rem;
                 }
-    
-    
-    
             }
-    
             .projects-section-details{
                 display: grid;
                 // grid-template-columns: 1fr 1fr 1fr;
                 grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    
-                // border: 2px solid;
+                margin: 0 2rem;
                 .project-info{
                     margin: 1rem;
                     border-radius: .2rem;
-                    padding:  6.5rem 3rem;
+                    padding:  6.5rem 2rem;
                     padding-top: 1rem;
                     position: relative;
                     background-color: transparent;
                     background-color: rgb(5, 5, 75);
                     // border: .03rem solid rgb(3, 27, 106);
-    
                     //THE DIV WITH THE ICONS    
                     .project-section-icons-container{
-    
                         // border: 1px solid;
                         padding: 1rem .5rem;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         margin-bottom: 2rem;
-    
+                        color: white;
                         a{
-    
-    
-                            i{
-                                color: white;
-                                opacity: .7;
-                                font-size: 2rem;
-    
-    
+                            color: white;
+                            svg{
+                                width: 2rem;
                             }
                         }
-    
                         //GIVING PADDING RIGHT TO THE COODE ICON
-    
                         .code{
                             padding-right: 1.8rem;
                         }
-    
-    
                     }
-                  
                     h1{
                         font-size: 1.5rem;
                         opacity: .6;
                         padding-bottom: 1rem;
                         text-transform: capitalize;
                         font-weight: 600;
-    
                     }
-    
                     p{
                         font-weight: $regular;
                         font-size: 1.5rem;
@@ -871,43 +707,33 @@
                         letter-spacing: .02rem;
                         padding-bottom: 2rem;
                     }
-    
                     //the div with the tech used 
                     .tech-used-container{
                         // border: 1px solid;
                         position: absolute;
                         bottom: 5%;
                         margin-bottom: .5rem;
-    
-    
                         .tech-used{
                             padding-right:.8rem;
                             font-size: 1.2rem;
                             opacity: .6;
                             font-weight: $light;
-        
-                            
                         }
                     }
-    
                 }
             }
         }
-    
-    
     }
+
     //SEND ME A MESSAGE SECTION
     .send-message-section{
         background-color:$body-color;
         padding: 20rem 0;
-    
-    
         .send-message-container{
             max-width: 680px;
             // border: 2px solid ;
             padding: 2rem 8rem;
             margin: 0 auto;
-    
             h1{
                 font-size: 2.2rem;
                 padding: 1rem 0;
@@ -915,7 +741,6 @@
                 color: black;
                 opacity: .8;
             }
-    
             p{
                 font-weight: $medium;
                 font-size: 1.5rem;
@@ -923,9 +748,7 @@
                 padding-bottom: 1rem;
                 color: black;
             }
-    
             .send-message-container-details{
-    
                 #form{
                     .name-email-container{
                         display: flex;
@@ -933,8 +756,6 @@
                         margin-top: 3rem; 
                         justify-content: space-between;
                     }
-    
-    
                     //STYLING THE INPUT AND TEXTAREA
                     textarea,input{
                         border: none;
@@ -954,7 +775,6 @@
                             font-weight: $regular;
                             text-transform: uppercase;
                         }
-    
                         &:focus{
                             outline: none;
                             transform: translateY(-.5rem);
@@ -968,8 +788,6 @@
                         width: 100%;
                         padding: .2rem;
                     }
-    
-    
                     .button-container{
                         // border: 2px solid red;
                         margin-top: 2rem;
@@ -992,39 +810,31 @@
                         position: relative;
                         z-index: 22;
                         // color: white;
-    
                         #animatingSubmitButton{
                             position: absolute;
                             top: 0;
                             left: 0;
-    
                             height: 100%;
                             width: 100%;
-    
                             // z-index: 21;
                             background-color: black;
                             z-index: -1;
                             clip-path: inset(0 100% 0 0);
                             // transition: all .1s ease-in-out;
-    
                         }
-    
-                        
                     }
                 }
             }
         }
     }
-    
+
     //CONTACT SECTION
     .contact-section{
         background-color: $about-and-contact-color;
         padding: 20rem 0;
         color: white;
-    
         position: relative;
         .contact-section-container{
-    
             max-width: 800px;
             margin: 0 auto;
             display: grid;
@@ -1038,7 +848,6 @@
                     font-size: 4.4rem;
                     opacity: .9;
                 }
-    
                 a{
                     font-size: 3.4rem;
                     font-weight: $regular;
@@ -1046,8 +855,6 @@
                     text-decoration: none;
                     position: relative;
                     color:white;
-                    
-                    
                     &::after{
                         content: '';
                         display: block;
@@ -1057,11 +864,9 @@
                         background-color: lightgrey;
                         bottom: -5%;
                         right: 0;
-    
                     }
                 }
             }
-    
             .contact-section-email-and-links{
                 // border: 2px solid rgb(255, 255, 255);
                 padding: 5rem;
@@ -1069,7 +874,6 @@
                 grid-template-columns: 1fr 1fr;
                 .contact-section-email{
                     // border: 1px solid green;
-                  
                     //THE EMAIL ADDRESS
                     a{
                         font-size: 1.7rem;
@@ -1087,12 +891,9 @@
                             left: 0;
                             bottom: -2%;
                             right: 0;
-        
                         }
-    
                     }
                 }
-    
                 .contact-section-links{
                     height: 50%;
                     text-align: center;
@@ -1109,7 +910,6 @@
                 }
             }
         }
-    
     }
     
     // CLASSES TO BE TOGGLED ARE HERE
@@ -1191,16 +991,12 @@
         .about-me-section .about-me-section-header-and-info .about-me-flex-container .about-me-container .about-me-image .image-container{
             height: 25rem;
             width: 25rem;
-    
             .image{
                 height: 25rem;
                 max-width: 25rem;
             }
        
         }
-            
-    
-    
     }
     
     
