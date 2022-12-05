@@ -102,7 +102,7 @@
                         </div>   
 
                         <h1>Exceed online shop</h1>
-                        <p>A website that I am currently working on, for an online apparel shop. Built with Nuxt.js</p>
+                        <p>A website concept that I am currently working on, for an online apparel shop. Built with Nuxt.js</p>
                         <div class="tech-used-container">
                             <span class="tech-used">Nuxt.js</span>
                             <span class="tech-used">TypeScript</span>
