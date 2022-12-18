@@ -1,6 +1,8 @@
 
 <h3>Personal Website</h3>
+
 ## Project setup
+
 ```
 npm install
 ```
