@@ -19,7 +19,7 @@
                                 <p class="fade-in-ams">Some of the technologies I have been using :</p>
                                 
                                 <ul class="tech-ul fade-in-ams">
-                                    <li>Javascript</li>
+                                    <li>Nuxt.js</li>
                                     <li>Vue.js</li>
                                     <li>TypeScript</li>
                                     <li>REST APIs</li>
