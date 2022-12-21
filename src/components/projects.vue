@@ -27,8 +27,8 @@
                         <h1>Spotify Connected App</h1>
                         <p>Integrated with Spotify's API, this web app shows personalized Spotify data. View recently played tracks, top songs, top artists and more. Get recommended artists based on your top artists.</p>
                         <div class="tech-used-container">
-                            <span class="tech-used">Vue.js</span>
-                            <span class="tech-used">Spotify's API</span>
+                            <p class="tech-used">Vue.js</p>
+                            <p class="tech-used">Spotify's API</p>
                          
                         </div>
 
@@ -51,8 +51,8 @@
                         <h1>Exceed online shop</h1>
                         <p>A website concept that I am currently working on, for an online apparel shop. Built with Nuxt.js</p>
                         <div class="tech-used-container">
-                            <span class="tech-used">Nuxt.js</span>
-                            <span class="tech-used">TypeScript</span>
+                            <p class="tech-used">Nuxt.js</p>
+                            <p class="tech-used">TypeScript</p>
           
                         </div>
 
@@ -79,9 +79,9 @@
                         <p>Website redesign concept of lompasago sacco</p>
                      
                         <div class="tech-used-container">
-                            <span class="tech-used">HTML</span>
-                            <span class="tech-used">JS</span>
-                            <span class="tech-used">SASS</span>
+                            <p class="tech-used">HTML</p>
+                            <p class="tech-used">JS</p>
+                            <p class="tech-used">SASS</p>
                         </div>
     
                     </div>
@@ -107,8 +107,8 @@
                         <h1>C-Profiles</h1>
                         <p>A simpler and quicker way for github users to view their repository stats, languages used for each repo.Includes chart visualizations of your top languages.</p>
                         <div class="tech-used-container">
-                            <span class="tech-used">Github API</span>
-                            <span class="tech-used">Chart.js</span>
+                            <p class="tech-used">Github API</p>
+                            <p class="tech-used">Chart.js</p>
 
                         </div>
 
@@ -132,8 +132,8 @@
                         <h1>Personal Website V3</h1>
                         <p>Third iteration of my personal website. Developed using Vue.js.</p>
                         <div class="tech-used-container">
-                            <span class="tech-used">Vue.js</span>
-                            <span class="tech-used">GSAP</span>
+                            <p class="tech-used">Vue.js</p>
+                            <p class="tech-used">GSAP</p>
 
                         </div>
 
@@ -162,7 +162,7 @@
                         <p> A web app to test your typing skills. Built with vue.js</p>
                      
                         <div class="tech-used-container">
-                            <span class="tech-used">Vue.js</span>
+                            <p class="tech-used">Vue.js</p>
                         </div>
     
                     </div>
@@ -185,8 +185,8 @@
                         <h1>simply notes</h1>
                         <p>A customizable note app. Select what theme to use and choose fonts from more than 6 different font families. Intergrated with local storage.</p>
                         <div class="tech-used-container">
-                            <span class="tech-used">Local storage</span>
-                            <span class="tech-used">JS</span>
+                            <p class="tech-used">Local storage</p>
+                            <p class="tech-used">JS</p>
           
                         </div>
 
@@ -211,8 +211,8 @@
                      <h1>API connected app</h1>
                      <p>A web app that shows covid-19 history analysis for any country. Uses chart.js to show graph of a country's statistics.</p>
                      <div class="tech-used-container">
-                         <span class="tech-used">Vue.js</span>
-                         <span class="tech-used">REST API</span>
+                         <p class="tech-used">Vue.js</p>
+                         <p class="tech-used">REST API</p>
                      </div>
                     </div>
                 </div>
