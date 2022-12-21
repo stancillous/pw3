@@ -20,7 +20,6 @@ window.onbeforeunload = () => {
 window.addEventListener('load',()=>{
     pageTimelines()
     showLInks()
-    linksClicked()
     initLocomotiveScroll()
     cursorAnimation()
 })
@@ -132,36 +131,39 @@ function initLocomotiveScroll(){
 }
 
 
-const hamburgerButton = document.querySelector('.hamburger-button') //button
+const hamburgerButton = document.querySelector('.btn') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
-const aLinks = document.querySelectorAll('.menu-links-items-a')  //the a tags in the header section
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
 const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
 
 
-//FUNCTION TO HIDE THE MENU LINKS WHEN A LINK IS CLICKED
-function linksClicked(){
-
-    aLinks.forEach((item)=>{
-        //HIDING THE MENU LINKS CONTAINER WHEN A LINK IS CLICKED
-        item.addEventListener('click',()=>{
-            navlinks.classList.remove('show-links')  //HIDE THE LINKS CONTAINER
-            hamburgerButton.classList.remove('hamburgerclicked') //REMOVE THE ANIMATION ON THE HAMBURGER BUTTON
-        })
-    })
-}
-
-// linksClicked()
 
 //FUNCTION TO SHOW THE MENU LINKS WHEN H.BUTTON IS CLICKED
 function showLInks(){
     hamburgerButton.addEventListener('click',()=>{
-        hamburgerButton.classList.toggle('hamburgerclicked')
+
+        if(hamburgerButton.classList.contains('active')){
+            hamburgerButton.classList.remove('active')
+            hamburgerButton.classList.add('not-active')
+        }
+        else{
+            hamburgerButton.classList.remove('not-active')
+            hamburgerButton.classList.add('active')
+        }
+
         navlinks.classList.toggle('show-links')
     })
+    
+    let navRouterLinks = document.querySelectorAll('.menu-links-items-a') 
+    navRouterLinks.forEach((link)=>{
+        
+        link.addEventListener('click',()=>{
+            hamburgerButton.classList.remove('active')
+            navlinks.classList.remove('show-links')
+    })
+})
 }
-// showLInks()
 
 //TIMELINES FOR THE PAGE
 function pageTimelines(){
@@ -174,7 +176,7 @@ function pageTimelines(){
     topPageSectionTl.fromTo('.main',{opacity:0},{opacity:1,ease:'none'})
             .from('.menu-links-items',{y:-33,opacity:0,stagger:.05,duration:.6}) //the menu links
             .from('.top-page-logo',{opacity:0},'<') //the logoimage
-            .from('.hamburger-button',{opacity:0},'<') //the hamburger button
+            .from('.box',{opacity:0},'<') //the hamburger button
             .from('.fade-in-title',{opacity:0,y:33,stagger:.1,duration:.6}) //animating the names on the top page section
             .fromTo('.social-links',{opacity:0},{opacity:1})  // the div on the left side with the social media icons
             .fromTo('.navigate-div',{opacity:0},{opacity:1},'<') //the line on the right side of the page
