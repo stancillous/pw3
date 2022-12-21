@@ -21,21 +21,25 @@
                                    </div>
                                     <div class="social-links-container">
                                         <div class="social-links-a-div">
-                                            <a target="_blank" href="https://github.com/stancillous">gh</a>
-                                            <a target="_blank" href="https://www.linkedin.com/in/stancillous/">ln</a>
-                                            <a target="_blank" href="https://t.me/Stancillous">tg</a>
-                                            <a target="_blank" href="https://www.instagram.com/stancillous/">ig</a>
+                                            <a target="_blank" href="https://github.com/stancillous">github</a>
+                                            <a target="_blank" href="https://www.linkedin.com/in/stancillous/">linkedin</a>
+                                            <a target="_blank" href="https://t.me/Stancillous">telegram</a>
+                                            <a target="_blank" href="https://www.instagram.com/stancillous/">instagram</a>
                                         </div>
                                     </div>
                                 </ul>
                           </div>
                       </nav>
                   </div>
-                      <!-- HAMBURGER BUTTON -->
-                  <div class="hamburger-button">
-                      <span></span>
-                      <span></span>
-                  </div>
+                
+
+                  <div class="box">
+                    <div class="btn not-active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
       </header>
       <div class="social-links">
           <div class="social-links-container">
@@ -142,30 +146,144 @@
         min-height: 100vh;
     }
     
-    .hamburger-button{
-        position:absolute;
-        top: 33%;
-        right: 5%;
+ 
+    .box {
+  position: absolute;
+  z-index: 4343;
+    right: 5%;
+    top: 4.4rem;
+    right: 5%;
+    display: none;
+  transform: translate(-50%, -50%);
+}
+
+    .btn {
         cursor: pointer;
-        display: none;
-        transform: rotate(0deg);
-        transition:  transform .5s ease;
-      
-        span{
-            background-color: rgb(58, 58, 58);
-            background-color: rgba(0, 0, 0, 0.609);
-            border-radius: 5rem;
-            margin: 0.5rem 0;
-            padding: .1rem;
-            height: 0.3rem;
-            width: 2.5rem;
-            display: block;
-            transition: all .3s ease-in;
-    
-    
-    
-        }
     }
+
+span {
+  display: block;
+  width: 3rem;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+  border-radius: 3px;
+  height: .3rem;
+  margin: .2rem 0;
+  background: rgba(0, 0, 0, 0.693);
+  transition: all .3s;
+  position: relative;
+}
+
+.active span:nth-child(1) {
+  animation: ease .7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+  animation: ease .7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+  animation: ease .7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+  animation: ease .7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+  animation: ease .7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+  animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform:rotate(0);
+}
+50% {
+    top: 22px;
+    transform: rotate(0);
+}
+100% {
+    top: 22px;
+    transform: translateY(-1.2rem) rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    // top: 22px;
+    top: 12px;
+    transform: rotate(4deg);
+  }
+  50% {
+    top: 12px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    // transform: rotate(0);
+    transform: translateY(2.2rem) rotate(0);
+
+  }
+  50% {
+    bottom: 12px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 22px;
+    transform: translateY(2.2rem) rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 22px;
+    transform: rotate(135deg);
+    transform: translateY(2.2rem) rotate(0);
+
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
     
     
     .main{
@@ -344,6 +462,7 @@
                             color: rgb(0, 0, 0);
                             // opacity: .9;
                             font-size: 1.3rem;
+
                             font-weight:600;
                             text-decoration: none;
                             position: relative;
@@ -371,7 +490,7 @@
                             grid-row-gap: 3rem;
                             a{
                                 color: rgb(0, 0, 0);
-                                font-size: 1.4rem;
+                                font-size: 1.2rem;
                                 color: rgba(0, 0, 255, 0.657);
                                 font-weight: $bold;
                                 // font-weight: $medium;
@@ -709,13 +828,16 @@
                     }
                     //the div with the tech used 
                     .tech-used-container{
-                        // border: 1px solid;
+                        width: 100%;
+                        // height: 2rem;
+                        margin-top: 2rem;
                         position: absolute;
-                        bottom: 5%;
+                        bottom: 0;
+                        display: flex;
                         margin-bottom: .5rem;
                         .tech-used{
                             padding-right:.8rem;
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
                             opacity: .6;
                             font-weight: $light;
                         }
@@ -914,28 +1036,7 @@
     
     // CLASSES TO BE TOGGLED ARE HERE
     
-    ///TOGGLE THIS CLASS TO THE HAMBURGER WHEN CLICKED
-    
-    .hamburger-button.hamburgerclicked{
-        // position:fixed;
-        transform: rotate(360deg);
-        position: fixed;
-        top: 5%;
-        right: 5%;
-    
-        span{
-            height: .2rem;
-            background-color: rgba(0, 0, 255, 0.834);
-            &:nth-child(1){
-                transform: translateY(.4rem) rotate(45deg);
-    
-            }
-    
-            &:nth-child(2){
-                transform: translateY(-.3rem) rotate(-45deg);
-            }
-        }
-    }
+  
     
     //CLASS TO BE TOGGLED TO THE ACTIVE SECTION NAV
     .main .navigate-div .navigate-buttons .nav-buttons-div.active-div {
@@ -1034,12 +1135,8 @@
         }
     
         //showing the button
-        .hamburger-button{
+        .box{
             display: block;
-            z-index: 1221;
-            top: 35%;
-            // border: 2px solid;
-            // position: absolute;
         }
     
         //PAGE HEADER
