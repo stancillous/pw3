@@ -151,7 +151,7 @@
   position: absolute;
   z-index: 4343;
     right: 5%;
-    top: 4.4rem;
+    top: 4.8rem;
     right: 5%;
     display: none;
   transform: translate(-50%, -50%);
