@@ -73,7 +73,7 @@
                             </div>
                         </div>
 
-                        <h1>Nuxt.js Website</h1>
+                        <h1>Nuxt Website</h1>
                         <p>A website of a Kenyan DJ, built with Nuxtjs, Typescript and Firebase</p>
                      
                         <div class="tech-used-container">
