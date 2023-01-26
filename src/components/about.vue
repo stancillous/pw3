@@ -28,9 +28,9 @@
                                 </ul>
 
          
-                                <!--<div class="resume-button-container fade-in-ams">
+                                <div class="resume-button-container fade-in-ams">
                                     <button id="resumeBtn"><div id="animatingResumeButton"></div><a target="_blank" class="download-resume" href="https://stanceray.com/stancillous.pdf">my resume</a></button>
-                                </div> -->
+                                </div> 
                                 
                          
                             </div>
