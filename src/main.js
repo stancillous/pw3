@@ -135,7 +135,7 @@ const hamburgerButton = document.querySelector('.btn') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
-const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
+// const resumeBtn = document.querySelector('#resumeBtn') //the a tag to download my resume
 
 
 
@@ -183,21 +183,21 @@ function pageTimelines(){
 
 
     //TIMELINE TO ANIMATE THE 'MY RESUME' BUTTON WHEN HOVERED ON
-    let resumeBtnTl = gsap.timeline({paused:true})
-    resumeBtnTl.to('#animatingResumeButton',{ease:'Power0.easeNone',duration:.2,clipPath:'inset(0 1% 0 0)'})
+    // let resumeBtnTl = gsap.timeline({paused:true})
+    // resumeBtnTl.to('#animatingResumeButton',{ease:'Power0.easeNone',duration:.2,clipPath:'inset(0 1% 0 0)'})
 
-    resumeBtn.addEventListener('mouseenter',()=>{
+    // resumeBtn.addEventListener('mouseenter',()=>{
 
-        resumeBtnTl.play()
-        document.querySelector('.download-resume').style.fontWeight = 'bold'
-        document.querySelector('.download-resume').style.color = 'blue'
-    })
+    //     resumeBtnTl.play()
+    //     document.querySelector('.download-resume').style.fontWeight = 'bold'
+    //     document.querySelector('.download-resume').style.color = 'blue'
+    // })
 
-    resumeBtn.addEventListener('mouseleave',()=>{
-        resumeBtnTl.reverse()
-        document.querySelector('.download-resume').style.color = 'white'
-        document.querySelector('.download-resume').style.fontWeight = '500'
-    })
+    // resumeBtn.addEventListener('mouseleave',()=>{
+    //     resumeBtnTl.reverse()
+    //     document.querySelector('.download-resume').style.color = 'white'
+    //     document.querySelector('.download-resume').style.fontWeight = '500'
+    // })
 
     //TIMELINE TO ANIMATE THE SUBMIT BUTTON WHEN HOVERED ON
     let submitBtnTl = gsap.timeline({paused:true})
