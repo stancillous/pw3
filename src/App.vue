@@ -1459,7 +1459,7 @@ span {
                 .contact-me{
                     h1{
                         font-size: 2.5rem;
-                        color:
+                        color:white;
                         padding-bottom: 1rem;
                     }
                     a{
