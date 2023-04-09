@@ -6,7 +6,7 @@
                       <nav class="nav-bar">
                           <div class="logo">
                               <div class="logo-image-container">
-                                <a href="https://stanceray.com/" class="top-page-logo lg">raymond</a>
+                                <a href="https://stanceray.com/" class="top-page-logo lg">ray</a>
                               </div>
                           </div>
                           <div class="page-header-links">
