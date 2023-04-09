@@ -1403,7 +1403,9 @@ span {
     }
     
     @media screen and (max-width:480px) {
-        .top-page-section .top-page-content .top-page-content-container{
+        .top-page-section{
+        height:90vh;
+         .top-page-content .top-page-content-container{
             .greeting h1{
                 font-size: 1.3rem;
             }
@@ -1417,6 +1419,9 @@ span {
                 font-size: 1.4rem;
             }
         }
+         }
+        
+        
     
         .about-me-section .about-me-section-header-and-info{
             
@@ -1446,7 +1451,7 @@ span {
         .contact-section
         {
             height: auto;
-            padding: 4rem 0;
+            padding: 6.2rem 0;
             .contact-section-container{
                 .contact-me{
                     h1{
