@@ -1451,11 +1451,14 @@ span {
         .contact-section
         {
             height: auto;
-            padding: 6.2rem 0;
+            padding: 6.5rem 0;
+            background-color:black;
+            color:white;
             .contact-section-container{
                 .contact-me{
                     h1{
                         font-size: 2.5rem;
+                        color:
                         padding-bottom: 1rem;
                     }
                     a{
