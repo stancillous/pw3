@@ -1403,18 +1403,23 @@ span {
     }
     
     @media screen and (max-width:480px) {
-        .top-page-section .top-page-content .top-page-content-container{
-            .greeting h1{
-                font-size: 1.3rem;
-            }
-            .name h1{
-                font-size: 3rem;
-            }
-            .profession h1{
-                font-size: 2.7rem;
-            }
-            .info p{
-                font-size: 1.4rem;
+
+        .top-page-section
+        {
+            height: 90vh;
+            .top-page-content .top-page-content-container{
+                .greeting h1{
+                    font-size: 1.3rem;
+                }
+                .name h1{
+                    font-size: 3rem;
+                }
+                .profession h1{
+                    font-size: 2.7rem;
+                }
+                .info p{
+                    font-size: 1.4rem;
+                }
             }
         }
     
@@ -1446,14 +1451,17 @@ span {
         .contact-section
         {
             height: auto;
-            padding: 4rem 0;
+            padding: 6.3rem 0;
+            background-color: black;
             .contact-section-container{
                 .contact-me{
                     h1{
                         font-size: 2.5rem;
+                        color: white;
                         padding-bottom: 1rem;
                     }
                     a{
+                        color: white;
                         font-size: 2.2rem;
                     }
                 }
@@ -1462,11 +1470,13 @@ span {
                     .contact-section-email{
                         a{
                             font-size: 1.5rem;
+                            color: white;
                         }
                     }
                     .contact-section-links{
                         a{
                             font-size: 1.4rem;
+                            color: white;
                             font-weight: $regular;
                         }
                     }
