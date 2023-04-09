@@ -1419,6 +1419,7 @@ span {
                 font-size: 1.4rem;
             }
         }
+        }
          
          
         
