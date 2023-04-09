@@ -11,7 +11,7 @@
                     <form action="https://formspree.io/f/xknerajz" method="POST" id="form">
 
                         <div class="name-email-container">
-
+                            
                             <input name="name" required autocomplete="off" class="sendMessageSectionInputs" placeholder="your name" type="text" id="name"> <br>
         
                             <input name="email" required autocomplete="off" class="sendMessageSectionInputs" placeholder="your email address" type="email" id="email"> <br>
