@@ -760,6 +760,7 @@ span {
                 align-items: center;
                 justify-content: flex-start;
                 padding: 2rem;
+                margin-left:1rem;
                 //PROJECTS TITLE
                 .projects-title{
                     font-weight: 600;
@@ -957,6 +958,7 @@ span {
     //CONTACT SECTION
     .contact-section{
         background-color: $about-and-contact-color;
+        background-color:black;
         padding: 20rem 0;
         color: white;
         position: relative;
