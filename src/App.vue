@@ -852,7 +852,7 @@ span {
         background-color:$body-color;
         padding: 20rem 0;
         .send-message-container{
-            max-width: 680px;
+            max-width: 780px;
             // border: 2px solid ;
             padding: 2rem 8rem;
             margin: 0 auto;
@@ -872,6 +872,9 @@ span {
             }
             .send-message-container-details{
                 #form{
+                    label{
+                        font-size: 1.3rem;
+                    }
                     .name-email-container{
                         display: flex;
                         // border: 2px solid;
@@ -884,18 +887,18 @@ span {
                         background-color: transparent;
                         font-weight: $bold;
                         font-size: 1.3rem;
+                        margin: .9rem 0;
                         color: black;
                         font-family: $web-font1,$web-font2;
                         padding: .8rem ;
                         border-bottom: 1px solid #000;
-                        text-transform: none;
+                        text-transform: uppercase;
                         //STYLING THE PLACEHOLDER
                         &::placeholder{
                             color: black;
                             opacity: .8;
                             font-size: 1.2rem;
                             font-weight: $regular;
-                            text-transform: uppercase;
                         }
                         &:focus{
                             outline: none;
@@ -908,7 +911,8 @@ span {
                     }
                     textarea{
                         width: 100%;
-                        padding: .2rem;
+                        // padding: .2rem;
+                        
                     }
                     .button-container{
                         // border: 2px solid red;
@@ -1255,9 +1259,13 @@ span {
             }
         }
     
-        .send-message-section .send-message-container{
-            padding: 4rem;
+        .send-message-section{
+            
+            .send-message-container{
+                padding: 4rem;
+            }
         }
+        
     
         .about-me-section{
             z-index: 99999;
@@ -1270,7 +1278,8 @@ span {
             
         } 
     
-        .contact-section .contact-section-container {
+        .contact-section{
+            .contact-section-container {
             .contact-me{
                 padding: 3rem;
                 h1{
@@ -1286,6 +1295,8 @@ span {
             }
     
         }
+        }
+        
     
     }
     
@@ -1418,35 +1429,46 @@ span {
     
 
     
-        .send-message-section .send-message-container {
+        .send-message-section 
+        {
+            height: auto;
+            padding: 4rem 0;
 
-            p{
-                br{content:' ';}
-                br:after{content:' ';}
+            .send-message-container {
+    
+                p{
+                    br{content:' ';}
+                    br:after{content:' ';}
+                }
             }
         }
     
-        .contact-section .contact-section-container{
-            .contact-me{
-                h1{
-                    font-size: 2.5rem;
-                    padding-bottom: 1rem;
-                }
-                a{
-                    font-size: 2.2rem;
-                }
-            }
-    
-            .contact-section-email-and-links{
-                .contact-section-email{
+        .contact-section
+        {
+            height: auto;
+            padding: 4rem 0;
+            .contact-section-container{
+                .contact-me{
+                    h1{
+                        font-size: 2.5rem;
+                        padding-bottom: 1rem;
+                    }
                     a{
-                        font-size: 1.5rem;
+                        font-size: 2.2rem;
                     }
                 }
-                .contact-section-links{
-                    a{
-                        font-size: 1.4rem;
-                        font-weight: $regular;
+        
+                .contact-section-email-and-links{
+                    .contact-section-email{
+                        a{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .contact-section-links{
+                        a{
+                            font-size: 1.4rem;
+                            font-weight: $regular;
+                        }
                     }
                 }
             }
