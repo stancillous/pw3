@@ -1,6 +1,7 @@
 <template>
     
     <main data-scroll-container class="main">
+        
       <header data-scroll-section class="page-header">
                   <div class="page-header-container" data-cursor="-hidden">
                       <nav class="nav-bar">
@@ -37,13 +38,18 @@
                   </div>
                 
 
-                  <div class="box">
-                    <div class="btn not-active">
+                  <div id="menu-toggle">
+                    <div id="hamburger">
                         <span></span>
+                        <span></span>
+                    </div>
+                    <div id="cross">
                         <span></span>
                         <span></span>
                     </div>
                 </div>
+                  
+
       </header>
       <div class="social-links">
           <div class="social-links-container">
@@ -151,141 +157,114 @@
     }
     
  
-    .box {
-  position: absolute;
-  z-index: 4343;
-    right: 5%;
-    top: 4.8rem;
-    right: 5%;
-    display: none;
-  transform: translate(-50%, -50%);
-}
 
-    .btn {
-        cursor: pointer;
-    }
 
 span {
-  display: block;
-  width: 3rem;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-  border-radius: 3px;
-  height: .3rem;
-  margin: .2rem 0;
-  background: rgba(0, 0, 0, 0.693);
-  transition: all .3s;
-  position: relative;
+  display:block;
+  background:#000;
+  background-color: #444751;
+  border-radius:2px;
+  transition:.25s ease-in-out;
+
 }
 
-.active span:nth-child(1) {
-  animation: ease .7s top forwards;
-}
+#menu-toggle {
+    display: none;
+    position: fixed;
+    // border: 2px solid blue;
+    z-index: 3432;
+    top:1.2rem;
+    right: 1rem;
 
-.not-active span:nth-child(1) {
-  animation: ease .7s top-2 forwards;
-}
+  width:100px;
+  height:100px;
+//   margin:5px auto;
 
-.active span:nth-child(2) {
-  animation: ease .7s scaled forwards;
-}
+  cursor:pointer;
+  // background:rgba(255,255,255,.4);
+  border-radius:5px;
+ 
 
-.not-active span:nth-child(2) {
-  animation: ease .7s scaled-2 forwards;
-}
-
-.active span:nth-child(3) {
-  animation: ease .7s bottom forwards;
-}
-
-.not-active span:nth-child(3) {
-  animation: ease .7s bottom-2 forwards;
-}
-
-@keyframes top {
-  0% {
-    top: 0;
-    transform:rotate(0);
-}
-50% {
-    top: 22px;
-    transform: rotate(0);
-}
-100% {
-    top: 22px;
-    transform: translateY(-1.2rem) rotate(45deg);
+  #hamburger {
+    position:absolute;
+    height:100%;
+    width:100%;
+    span {
+      width:3.2rem;
+      height:2px;
+      position:relative;
+      top:24px;
+      left:20px;
+      margin:8px 0;
+      &:nth-child(1){
+        transition-delay:.5s;
+      }
+      &:nth-child(2){
+        transition-delay:.625s;
+      }
+      &:nth-child(3){
+        transition-delay:.75s;
+      }
+    }
   }
-}
-
-@keyframes top-2 {
-  0% {
-    // top: 22px;
-    top: 12px;
-    transform: rotate(4deg);
-  }
-  50% {
-    top: 12px;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes bottom {
-  0% {
-    bottom: 0;
-    // transform: rotate(0);
-    transform: translateY(2.2rem) rotate(0);
-
-  }
-  50% {
-    bottom: 12px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 22px;
-    transform: translateY(2.2rem) rotate(135deg);
+  #cross {
+    position:absolute;
+    height:100%;
+    width:100%;
+    transform:rotate(45deg);
+    span{
+      &:nth-child(1){
+        height:0%;
+        width:2px;
+        position:absolute;
+        top:33%;
+        left:28px;
+        transition-delay:0s;
+      }
+      &:nth-child(2){
+        width:0%;
+        height:2px;
+        position:absolute;
+        left:14%;
+        top:48px;
+        transition-delay:.25s;
+      }
+    }
   }
 }
 
-@keyframes bottom-2 {
-  0% {
-    bottom: 22px;
-    transform: rotate(135deg);
-    transform: translateY(2.2rem) rotate(0);
-
+#menu-toggle.open {
+  #hamburger {
+    span {
+      width:0%;
+      &:nth-child(1){
+        transition-delay:0s;
+      }
+      &:nth-child(2){
+        transition-delay:.125s;
+      }
+      &:nth-child(3){
+        transition-delay:.25s;
+      }
+    }
   }
-  50% {
-    bottom: 22px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-}
-
-@keyframes scaled {
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes scaled-2 {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
+  #cross {
+    span {
+      &:nth-child(1){
+        height:30%;
+        transition-delay:.625s;
+      }
+    }
+    span {
+      &:nth-child(2){
+        width:30%;
+        transition-delay:.375s;
+      }
+    }    
   }
 }
+
+
 
 
     
@@ -1057,20 +1036,19 @@ span {
         background-color: $body-color;
         transform: rotate(-180deg) scale(2);
         border-radius: unset;
-    
     }
     
     body.hideOverflow{  //disabling scrolling when the h. button is clicked
         overflow: hidden;
         height: 100vh;
-    
     }
     
     //TOGGLE THIS CLASS TO SHOW THE MENU LINKS
     .page-header .page-header-container .nav-bar .page-header-links.show-links{
-        // clip-path: inset(0 0 0 0);
         visibility: visible;
          opacity: 1;
+        clip-path: inset(0 0 0 0);
+
     
     }
     
@@ -1149,7 +1127,7 @@ span {
         }
     
         //showing the button
-        .box{
+        #menu-toggle{
             display: block;
         }
     
@@ -1174,11 +1152,11 @@ span {
                         width: 100vw;
                         opacity: 0;
                         visibility: hidden;
-                    
+                        clip-path: inset(0 0 0 50%);
+
                         background-color:white;
-                
-                        // transition: all .3s cubic-bezier(0,-0.02, 0.18, 0.65);
-                        transition: all .4s cubic-bezier(0.33, 1, 0.68, 1);
+
+                        transition: all .6s cubic-bezier(0.33, 1, 0.68, 1);
                     
                         ul{
                             width: 50%;
@@ -1194,47 +1172,21 @@ span {
                             li {
                                 .menu-links-items-a{
                                     
-                                    font-size: 1.4rem;
                                     font-weight: $bold;
                                     font-size: 1.5rem;
                                     color: rgb(0, 0, 0);
-    
-                                    &::after{
-                                        content: "";
-                                        width: 20%;
-                                        min-width: .85rem;
-                                        height: 100%;
-                                        top: 0;
-                                        left: 2%;
-                                        position: absolute;
-                                        pointer-events: none;
-                                        background-color: rgba(0, 0, 255, 0.374);
-                                        
-                                    }
+                                    // font-size: 3rem;
+                                    // font-weight: 2.6rem;
+                                    // font-weight: 500;
+                                    text-transform: capitalize;
     
                                 }
          
                                 #page-header-resume{
-                                    font-size: 1.4rem;
-                                    font-weight: $bold;
-                                    opacity: .7;
-                                    border: none;
-                                    text-transform: lowercase;
-                                    color: rgb(0, 0, 0);
-
-                                    &::after{
-                                        content: "";
-                                        width: 1.5rem;
-                                        min-width: .85rem;
-                                        height: 100%;
-                                        top: 0;
-                                        left: 1%;
-                                        position: absolute;
-                                        pointer-events: none;
-                                        background-color: rgba(0, 0, 255, 0.374);
-                                        
-                                    }
+                                    display: none;
+                       
                                 }
+                                
                             } 
                         }
     

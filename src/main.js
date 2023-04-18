@@ -131,7 +131,7 @@ function initLocomotiveScroll(){
 }
 
 
-const hamburgerButton = document.querySelector('.btn') //button
+const hamburgerButton = document.querySelector('#menu-toggle') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
@@ -143,14 +143,16 @@ const submitBtn = document.querySelector('#submitButton') //the button on the se
 function showLInks(){
     hamburgerButton.addEventListener('click',()=>{
 
-        if(hamburgerButton.classList.contains('active')){
-            hamburgerButton.classList.remove('active')
-            hamburgerButton.classList.add('not-active')
-        }
-        else{
-            hamburgerButton.classList.remove('not-active')
-            hamburgerButton.classList.add('active')
-        }
+        console.log('okay');
+        hamburgerButton.classList.toggle('open');
+        // if(hamburgerButton.classList.contains('active')){
+        //     hamburgerButton.classList.remove('active')
+        //     hamburgerButton.classList.add('not-active')
+        // }
+        // else{
+        //     hamburgerButton.classList.remove('not-active')
+        //     hamburgerButton.classList.add('active')
+        // }
 
         navlinks.classList.toggle('show-links')
     })
@@ -176,7 +178,7 @@ function pageTimelines(){
     topPageSectionTl.fromTo('.main',{opacity:0},{opacity:1,ease:'none'})
             .from('.menu-links-items',{y:-33,opacity:0,stagger:.05,duration:.6}) //the menu links
             .from('.top-page-logo',{opacity:0},'<') //the logoimage
-            .from('.box',{opacity:0},'<') //the hamburger button
+            .fromTo('#menu-toggle',{opacity:0},{opacity:1},'<') //the hamburger button
             .from('.fade-in-title',{opacity:0,y:33,stagger:.1,duration:.6}) //animating the names on the top page section
             .fromTo('.social-links',{opacity:0},{opacity:1})  // the div on the left side with the social media icons
             .fromTo('.navigate-div',{opacity:0},{opacity:1},'<') //the line on the right side of the page
