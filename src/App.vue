@@ -6,7 +6,11 @@
                       <nav class="nav-bar">
                           <div class="logo">
                               <div class="logo-image-container">
-                                <a href="https://stanceray.com/" class="top-page-logo lg">ray</a>
+                                
+                                <a href="https://stanceray.com/" class="top-page-logo lg">
+                                    <img src="./assets/site_logo.png" alt="">
+                                </a>
+                                <!-- <a href="https://stanceray.com/" class="top-page-logo lg">ray</a> -->
                               </div>
                           </div>
                           <div class="page-header-links">
@@ -399,6 +403,10 @@ span {
                             font-weight: $black;
                             font-family: $web-font2,$web-font1,$web-font3;
                             font-size: 2.4rem;
+
+                            img{
+                                width:6rem;
+                            }
                         }
   
                     }
