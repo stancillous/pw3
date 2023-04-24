@@ -8,9 +8,7 @@
                           <div class="logo">
                               <div class="logo-image-container">
                                 
-                                <a href="https://stanceray.com/" class="top-page-logo lg">
-                                    <img src="./assets/site_logo.png" alt="">
-                                </a>
+                                <a href="https://stanceray.com/" class="top-page-logo lg">stance</a>
                                 <!-- <a href="https://stanceray.com/" class="top-page-logo lg">ray</a> -->
                               </div>
                           </div>
@@ -19,7 +17,7 @@
                                   <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#about-section-id">about</a></li>
                                   <li class="menu-links-items"><a data-scroll-to  class="menu-links-items-a" href="#projects-section-id">projects</a></li>
                                   <li class="menu-links-items"><a  data-scroll-to class="menu-links-items-a" href="#contact-section-id">contact</a></li>
-                                  <li class="menu-links-items"><a target="_blank" href="https://stanceray.com/stancillous.pdf" id="page-header-resume">resume</a></li>
+                                  <li class="menu-links-items"><a target="_blank" id="blog-small-cta" class="menu-links-items-a" href="https://blog.stanceray.com">blog</a></li>
                                   <div class="nav-mail-div">
                                         <p>Get in touch</p>
                                         <a id="nav-mail" href="mailto:stancillousray@gmail.com">stancillousray@gmail.com</a>
@@ -34,20 +32,21 @@
                                     </div>
                                 </ul>
                           </div>
-                      </nav>
-                  </div>
+
+                          <div class="menu-toggle">
+                            <div id="hamburger">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div id="cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
                 
 
-                  <div id="menu-toggle">
-                    <div id="hamburger">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div id="cross">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
                   
 
       </header>
@@ -159,111 +158,6 @@
  
 
 
-span {
-  display:block;
-  background:#000;
-  background-color: #444751;
-  border-radius:2px;
-  transition:.25s ease-in-out;
-
-}
-
-#menu-toggle {
-    display: none;
-    position: fixed;
-    // border: 2px solid blue;
-    z-index: 3432;
-    top:1.2rem;
-    right: 1rem;
-
-  width:100px;
-  height:100px;
-//   margin:5px auto;
-
-  cursor:pointer;
-  // background:rgba(255,255,255,.4);
-  border-radius:5px;
- 
-
-  #hamburger {
-    position:absolute;
-    height:100%;
-    width:100%;
-    span {
-      width:3.2rem;
-      height:2px;
-      position:relative;
-      top:24px;
-      left:20px;
-      margin:8px 0;
-      &:nth-child(1){
-        transition-delay:.5s;
-      }
-      &:nth-child(2){
-        transition-delay:.625s;
-      }
-      &:nth-child(3){
-        transition-delay:.75s;
-      }
-    }
-  }
-  #cross {
-    position:absolute;
-    height:100%;
-    width:100%;
-    transform:rotate(45deg);
-    span{
-      &:nth-child(1){
-        height:0%;
-        width:2px;
-        position:absolute;
-        top:33%;
-        left:28px;
-        transition-delay:0s;
-      }
-      &:nth-child(2){
-        width:0%;
-        height:2px;
-        position:absolute;
-        left:14%;
-        top:48px;
-        transition-delay:.25s;
-      }
-    }
-  }
-}
-
-#menu-toggle.open {
-  #hamburger {
-    span {
-      width:0%;
-      &:nth-child(1){
-        transition-delay:0s;
-      }
-      &:nth-child(2){
-        transition-delay:.125s;
-      }
-      &:nth-child(3){
-        transition-delay:.25s;
-      }
-    }
-  }
-  #cross {
-    span {
-      &:nth-child(1){
-        height:30%;
-        transition-delay:.625s;
-      }
-    }
-    span {
-      &:nth-child(2){
-        width:30%;
-        transition-delay:.375s;
-      }
-    }    
-  }
-}
-
 
 
 
@@ -368,24 +262,22 @@ span {
                 height: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: space-between;
                 //LOGO
                 .logo{
-                    position: absolute;
-                    left: 2%;
-                    top: 30%;
+                    // position: absolute;
+                    // left: 2%;
+                    // top: 30%;
                     .logo-image-container{
                         .top-page-logo{
                             text-decoration: none;
                             color: black;
-                            opacity: .6;
-                            font-weight: $black;
-                            font-family: $web-font2,$web-font1,$web-font3;
-                            font-size: 2.4rem;
+                            opacity: .7;
+                            font-family: 'Chillax', sans-serif;
+                            font-weight: 600;
+                            font-size: 2rem;
 
-                            img{
-                                width:6rem;
-                            }
+                            
                         }
   
                     }
@@ -408,29 +300,13 @@ span {
                             padding: 0 1rem;
                             text-transform: lowercase;
                             position: relative;
-                            &:hover::after{
-                                content: "";
-                                width: 40%;
-                                min-width: .85rem;
-                                height: 100%;
-                                top: 0;
-                                left: 2%;
-                                position: absolute;
-                                pointer-events: none;
-                                background-color: rgba(0, 0, 255,.3);
-                            }
+                            
+                            
                     
                         }
-                        #page-header-resume{
-                            text-transform: uppercase;
-                            font-weight: $bold;
-                            text-transform: lowercase;
-                            font-size: 1.4rem;
-                            color: black;
-                            border: 1px solid black;
-                            padding: .8rem 1.3rem;
-                            text-decoration: none;
-                        }
+                        #blog-small-cta{
+                                display: none;
+                            }
                     }
                     //DIV TO BE SHOWN ON SMALL SCREENS WITH THE GET IN TOUCH MESSAGE AND EMAIL
                     .nav-mail-div{
@@ -452,17 +328,7 @@ span {
 
                             font-weight:600;
                             text-decoration: none;
-                            position: relative;
-                            &::after{
-                                content: '';
-                                display: block;
-                                height: .1rem;
-                                position: absolute;
-                                left: 0;
-                                background-color: rgba(0, 0, 255, 0.334);
-                                bottom: -5%;
-                                right: 0;
-                            }
+                            
                         }
                     }
                     //DIV WITH THE SOCIAL LINKS
@@ -487,6 +353,112 @@ span {
                         }
                     }
                 }
+                 
+
+                    .menu-toggle {
+                        width: 50px;
+                        height: 50px; 
+                        position: relative;
+                        cursor: pointer;
+                        border-radius: 5px;
+                          display: none;
+                        
+                        span{
+                            display:block;
+                            // background-color:#566973;
+                            border-radius:2px;
+                            height:1px;
+                            transition:.25s ease-in-out;
+                            background-color:#566973;
+
+                        }
+                        #hamburger {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            span {
+                            width: 30px; /* Adjusted width */
+                            height: 3px;
+                            border-radius:7px;
+                            position: relative;
+                            top: 18px; /* Adjusted top */
+                            top:10px;
+                            left: 5px; /* Adjusted left */
+                            margin: 6px 0;
+                            &:nth-child(1){
+                                transition-delay: .5s;
+                            }
+                            &:nth-child(2){
+                                transition-delay: .625s;
+                            }
+                            &:nth-child(3){
+                                transition-delay: .75s;
+                            }
+                            }
+                        }
+                        #cross {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            transform: rotate(45deg);
+                            span{
+                            &:nth-child(1){
+                                height: 0%;
+                                width: 3px;
+                                border-radius:7px;
+                                position: absolute;
+                                top: 20%;
+                                left: 23px;
+                                transition-delay: 0s;
+                            }
+                            &:nth-child(2){
+                                width: 0%;
+                                height: 3px;
+                                border-radius:7px;
+                                position: absolute;
+                                left: 22%;
+                                top: 22px; /* Adjusted top */
+                                transition-delay: .25s;
+                            }
+                            }
+                        }
+                    }
+
+                    .menu-toggle.open {
+                    #hamburger {
+                        span {
+                        width: 0%;
+                        &:nth-child(1){
+                            transition-delay: 0s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: .125s;
+                        }
+                        &:nth-child(3){
+                            transition-delay: .25s;
+                        }
+                        }
+                    }
+                    #cross {
+                        span {
+                        &:nth-child(1){
+                            height: 56%;
+                            // background-color: red;
+                            transition-delay: .625s;
+                            transition-delay: .425s;
+
+                        }
+                        }
+                        span {
+                        &:nth-child(2){
+                            width: 56%;
+                            transition-delay: .375s;
+                            transition-delay: .225s;
+
+                        }
+                        }    
+                    }
+                    }
             }
         }
     }
@@ -556,6 +528,20 @@ span {
                     padding: 1rem 0;
                     opacity: .7;
                     color: black;
+                }
+            }
+            .blog-ex-cta{
+                margin-top: 4rem;
+                .bxc-btn{
+                    a{
+                        text-decoration: none;
+                        font-weight: 600;
+                        padding: 1rem 2rem;
+                        font-size: 1.3rem;
+                        opacity: .9;
+                        color: black;
+                        border: 1px solid rgb(53, 45, 45);
+                    }
                 }
             }
         }
@@ -1048,8 +1034,6 @@ span {
         visibility: visible;
          opacity: 1;
         clip-path: inset(0 0 0 0);
-
-    
     }
     
     
@@ -1127,9 +1111,7 @@ span {
         }
     
         //showing the button
-        #menu-toggle{
-            display: block;
-        }
+        
     
         //PAGE HEADER
         .page-header{
@@ -1182,8 +1164,8 @@ span {
     
                                 }
          
-                                #page-header-resume{
-                                    display: none;
+                                #blog-small-cta{
+                                    display: block;
                        
                                 }
                                 
@@ -1202,7 +1184,9 @@ span {
                             display: block;
                         }
                     }
-    
+                    .menu-toggle{
+                        display: block;
+                    }
                 }
             }
         }
