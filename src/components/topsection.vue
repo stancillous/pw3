@@ -16,7 +16,13 @@
                     <div class="info">
                         <p class="info-paragraph fade-in-title">I love creating beautiful things that live on the internet. I seek to create web applications <br> that not only engage users, but also
                             solve user problems through effective solutions.</p>
+                    </div>
+
+                    <div class="blog-ex-cta">
+                        <div class="bxc-btn">
+                            <a target="_blank" class="fade-in-title" href="https://blog.stanceray.com">I write, sometimes</a>
                         </div>
+                    </div>
                 </div>
             </div>
 
