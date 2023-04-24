@@ -131,7 +131,7 @@ function initLocomotiveScroll(){
 }
 
 
-const hamburgerButton = document.querySelector('#menu-toggle') //button
+const hamburgerButton = document.querySelector('.menu-toggle') //button
 const navlinks  = document.querySelector('.page-header-links') //the links container
 const projectsInfoDiv = document.querySelectorAll('.project-info') //all the divs showing the info about my projects
 const submitBtn = document.querySelector('#submitButton') //the button on the send meessage section
@@ -143,16 +143,8 @@ const submitBtn = document.querySelector('#submitButton') //the button on the se
 function showLInks(){
     hamburgerButton.addEventListener('click',()=>{
 
-        console.log('okay');
         hamburgerButton.classList.toggle('open');
-        // if(hamburgerButton.classList.contains('active')){
-        //     hamburgerButton.classList.remove('active')
-        //     hamburgerButton.classList.add('not-active')
-        // }
-        // else{
-        //     hamburgerButton.classList.remove('not-active')
-        //     hamburgerButton.classList.add('active')
-        // }
+     
 
         navlinks.classList.toggle('show-links')
     })
@@ -161,7 +153,7 @@ function showLInks(){
     navRouterLinks.forEach((link)=>{
         
         link.addEventListener('click',()=>{
-            hamburgerButton.classList.remove('active')
+            hamburgerButton.classList.remove('open')
             navlinks.classList.remove('show-links')
     })
 })
